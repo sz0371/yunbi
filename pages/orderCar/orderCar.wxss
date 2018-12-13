@@ -1,0 +1,157 @@
+/* pages/orderCar/orderCar.wxss */
+.orderCar-footer{
+  height: 80rpx;
+  position: fixed;
+  bottom: 0;
+  width: 750rpx;
+}
+.orderCar-footerfl{
+  float: left;
+  width: 523rpx;
+  height: 80rpx;
+  background:rgba(122,196,233,0.12);
+  color: #5784D0;
+  text-align: right;
+  line-height: 80rpx;
+  font-size: 30rpx;
+  padding-right: 30rpx;
+}
+.orderCar-footerfr{
+  width: 190rpx;
+  height: 80rpx;
+  float: right;
+  text-align: center;
+  line-height: 80rpx;
+  font-size: 30rpx;
+  color:rgba(255,255,255,1);
+  background:linear-gradient(129.6deg,rgba(129,210,239,1),rgba(66,94,192,1));
+}
+.order-card{
+  margin-left: 26rpx;
+  margin-right: 26rpx;
+  padding-top: 17rpx;
+  padding-bottom: 17rpx;
+
+  background:rgba(255,255,255,1);
+  box-shadow:0px 6px 6px rgba(75,111,199,0.13);
+  border-radius:30rpx;
+  padding-left: 25rpx;
+  padding-right: 25rpx;
+  margin-bottom: 30rpx;
+}
+.order-cardImg,.order-cardBox{
+  vertical-align: middle;
+}
+.order-cardImg{
+  width: 186rpx;
+  height: 186rpx;
+  border-radius:15rpx;
+  border:1px solid rgba(234,234,234,1);
+  display: inline-table;
+}
+.order-cardBox{
+  width: 430rpx;
+  display: inline-table;
+  margin-left: 21rpx;
+}
+.order-cardBoxsfr image{
+  display: block;
+  width: 42rpx;
+  height: 31rpx;
+  float: left;
+  margin-right: 10rpx;
+}
+.order-cardTitle{
+  font-size: 30rpx;
+  color: #666;
+  display: block;
+  margin-bottom: 16rpx;
+}
+.order-cardLable{
+  font-size: 24rpx;
+  border-radius:100rpx;
+  border:1px solid rgba(151,151,151,1);
+  padding: 5rpx 15rpx;
+
+}
+.order-cardBoxs{
+  height: 40rpx;
+  margin-top: 18rpx;
+}
+.order-cardBoxsfl{
+  float: left;
+}
+.order-cardBoxsfr{
+  float: right;
+  text-align: right;
+  font-size: 28rpx;
+  color: #4B71CA;
+}
+.order-cardBoxsfl{
+  display: flex;
+}
+.order-cardBoxsfl view{
+  width:42rpx;
+  height:40rpx;
+  background:rgba(240,240,240,0.52);
+  text-align: center;
+  line-height: 40rpx;
+  font-size: 28rpx;
+  color: #979797;
+}
+.order-cardBoxsfl text{
+  display: block;
+  padding-left: 22rpx;
+  padding-right: 22rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+}
+.orderCarList{
+  height: 42rpx;
+  margin-left: 53rpx;
+  margin-right: 51rpx;
+  margin-bottom: 68rpx;
+}
+.orderCarListTop{
+  margin-top: 40rpx;
+}
+.orderCarListfl{
+  float: left;
+  font-size: 30rpx;
+  color: #666;
+  line-height: 44rpx;
+}
+.orderCarListfl image{
+  display: block;
+  float: left;
+  width: 34rpx;
+  height: 34rpx;
+  margin-top: 5rpx;
+  margin-right: 21rpx;
+}
+.orderCarListfr{
+  float: right;
+}
+.orderCarListfr image{
+  width: 13rpx;
+  height: 22rpx;
+  display: block;
+  float: right;
+  margin-top: 10rpx;
+}
+.orderCarListText{
+  margin-left: 25rpx;
+  margin-right: 25rpx;
+  margin-top: 31rpx;
+  border-radius: 10rpx;
+  margin-bottom: 45rpx;
+  padding-left: 30rpx;
+  display: block;
+  width: 670rpx;
+  height: 88rpx;
+  border: 1px solid rgba(134,162,216,1);
+  font-size: 30rpx;
+}
+.selAdress{
+  width: 300rpx;
+}

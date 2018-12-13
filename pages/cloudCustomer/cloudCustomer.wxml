@@ -1,0 +1,18 @@
+<!--pages/cloudCustomer/cloudCustomer.wxml-->
+<view class="cloudCustomer-box" wx:if="{{customerData.length}}">
+    <view class="cloudCustomer-boxs">
+        <view class="cloudCustomer-blist" bindtap="jumpCustomerInfo" wx:for="{{customerData}}" wx:key="{{*this}}" id="{{item.id}}">
+              <image src="{{item.headImg}}" class="cloudCustomer-blistfl"></image>
+              <view class="cloudCustomer-blisfr" id="{{item.id}}">
+                  <text id="{{item.id}}">{{item.name}}</text>
+                  <text id="{{item.id}}">{{item.phone}}</text>
+              </view>
+              <image id="{{item.id}}" src="/images/lanseright.png" class="cloudCustomer-blisleft"></image>
+        </view>
+    </view>
+</view>
+<view class="cloudCustomer-not" wx:else>
+    <image src="/images/noDate1.png"></image>
+    <text class=" ">暂无客户</text>
+</view>
+<view class="cloudCustomerBtn" bindtap="jumpSearchList"><image src="/images/share.png"></image>转送</view>

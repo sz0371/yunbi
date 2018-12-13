@@ -1,0 +1,12 @@
+<!--pages/cloudApply/cloudApply.wxml-->
+<view class="cloudApply-box" catchtap="">
+    <view class="cloudApply-btn {{num==1?'cloudApplyAddColor':''}}" data-num="1"  bindtap="selectApply">
+        <text class="cloudApply-btnTop" data-num="1">水池申领</text>
+        <text class="cloudApply-btnBtm" data-num="1">将水池转化为500朵云</text>
+    </view>
+    <view class="cloudApply-btn {{num==2?'cloudApplyAddColor':''}}" data-num="2" bindtap="selectApply">
+        <text class="cloudApply-btnTop" data-num="2">水池退订</text>
+        <text class="cloudApply-btnBtm" data-num="2">退订披云小水池，请致电400-8877-129</text>
+    </view>
+</view>
+<view class="cloudApplysubmit" bindtap="sumberBtn" data-id='{{num}}'>提交申请</view>

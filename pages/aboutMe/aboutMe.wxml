@@ -1,0 +1,84 @@
+<!--pages/aboutMe/aboutMe.wxml-->
+<view class="aboutMe-car">
+    <!-- 个人信息 -->
+    <view class="aboutMe-car-info" bindtap="jumpPersonal">
+        <view class="aboutMe-car-info-fl">
+            <image src="{{getuserheader}}"></image>
+        </view>
+        <view class="aboutMe-car-info-fr">
+            <text class="aboutMe-car-info-fr-title">{{getusername}}</text>
+            <text class="aboutMe-car-info-fr-code">邀请码： {{getusercode}}</text>
+            <image class="aboutMe-car-info-fr-iconLeft" src="/images/xiangzuo.png"></image>
+        </view>
+    </view>
+    <!-- 收货信息 -->
+    <view class="aboutMe-car-goods">
+        <view class="aboutMe-car-goods-title">
+            <text class="aboutMe-car-goods-titlefl">收货信息</text>
+            <text bindtap="jumpWholOrder" class="aboutMe-car-goods-titlefr">全部订单</text>
+        </view>
+        <view class="aboutMe-car-goods-box">
+            <view class="aboutMe-car-goods-tabs">
+               <image bindtap="jumpWaitOrder" class="aboutMe-car-goods-tabs-icon" src="/images/unpaid.png"></image>待支付
+            </view>
+            <view class="aboutMe-car-goods-tabs">
+               <image bindtap="jumpGiveOrder" class="aboutMe-car-goods-tabs-icon" src="/images/distribution.png"></image>配送中
+            </view>
+            <view class="aboutMe-car-goods-tabs">
+                <image bindtap="jumpSigntOrder" class="aboutMe-car-goods-tabs-icon" src="/images/unpaidin.png"></image>已签收
+            </view>
+        </view>
+    </view>
+</view>
+<!-- 列表 -->
+<view class="aboutMe-car-list">
+    <view class="aboutMe-car-lists" bindtap="jumpAccount">
+        <view class="aboutMe-car-lists-fl">
+             <image class="aboutMe-car-lists-fl-icon" src="/images/my-clouds.png"></image> 
+            <text class="aboutMe-car-lists-fl-text">我的账户</text>
+        </view>
+        <image class="aboutMe-car-lists-fr" src="/images/lanseright.png"></image>
+    </view>
+     <view bindtap="jumpMyPool"  class="aboutMe-car-lists">
+        <view class="aboutMe-car-lists-fl">
+            <image src="/images/my-pool.png" class="aboutMe-car-lists-fl-icon"></image>
+            <text class="aboutMe-car-lists-fl-text">认购水池</text>
+        </view>
+        <image class="aboutMe-car-lists-fr" src="/images/lanseright.png"></image>
+    </view>
+    <view bindtap="jumpcomList"  class="aboutMe-car-lists">
+        <view class="aboutMe-car-lists-fl">
+            <image src="/images/my-kehu.png" class="aboutMe-car-lists-fl-icon"></image>
+            <text class="aboutMe-car-lists-fl-text">我的客户</text>
+        </view>
+        <image class="aboutMe-car-lists-fr" src="/images/lanseright.png"></image>
+    </view>
+    <view  class="aboutMe-car-lists" bindtap="jumpAccountIfo">
+        <view class="aboutMe-car-lists-fl">
+            <image src="/images/my-jiameng.png" class="aboutMe-car-lists-fl-icon"></image>
+            <text class="aboutMe-car-lists-fl-text">企业账户信息</text>
+        </view>
+        <image class="aboutMe-car-lists-fr" src="/images/lanseright.png"></image>
+    </view>
+    <view class="aboutMe-car-lists" bindtap="jumpWelfare">
+        <view class="aboutMe-car-lists-fl">
+            <image src="/images/my-youhui.png" class="aboutMe-car-lists-fl-icon"></image>
+            <text class="aboutMe-car-lists-fl-text">我的公益</text>
+        </view>
+        <image class="aboutMe-car-lists-fr" src="/images/lanseright.png"></image>
+    </view>
+    <view class="aboutMe-car-lists" bindtap="jumpCloudApply">
+        <view class="aboutMe-car-lists-fl">
+            <image src="/images/my-shenling.png" class="aboutMe-car-lists-fl-icon"></image>
+            <text class="aboutMe-car-lists-fl-text">水池申领或退订</text>
+        </view>
+        <image class="aboutMe-car-lists-fr" src="/images/lanseright.png"></image>
+    </view> 
+    <view class="aboutMe-car-lists" bindtap="jumpCode">
+        <view class="aboutMe-car-lists-fl">
+            <image src="/images/my-shenling.png" class="aboutMe-car-lists-fl-icon"></image>
+            <text class="aboutMe-car-lists-fl-text">我的二维码</text>
+        </view>
+        <image class="aboutMe-car-lists-fr" src="/images/lanseright.png"></image>
+    </view> 
+</view>

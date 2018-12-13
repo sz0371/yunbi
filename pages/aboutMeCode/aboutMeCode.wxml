@@ -1,0 +1,13 @@
+<!--pages/aboutMeCode/aboutMeCode.wxml-->
+<view class="aboutMeCodeMark">
+    <view class="aboutMeCodeBox">
+        <view class="aboutMeCodeTitle">
+            <image src="{{codeData.headImg}}"></image>
+            <text>{{codeData.name}}</text>
+        </view>
+        <view class="aboutMeCodetwo">
+            <canvas class='canvas' canvas-id='canvas' bindlongtap='save'></canvas>
+        </view>
+        <text class="aboutMeCodeText">扫一扫图中二维码图案</text>
+    </view>
+</view>

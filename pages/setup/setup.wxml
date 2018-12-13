@@ -1,0 +1,8 @@
+<!--pages/setup/setup.wxml-->
+<image  class="setUp-banner" src="/images/index-banner1.png"></image>
+<view class="setUp-botm">
+    <image class="setUp-next" src="/images/click.jpg"></image>
+    <view class="setUp-slogan" bindtap="clickloginBtn"><image src="/images/index-logo.png"></image>
+      <text>喝好水，找披云</text>
+    </view>
+</view> 

@@ -1,0 +1,170 @@
+/* pages/cloudRecharge/cloudRecharge.wxss */
+.cloudRecharge-top{
+  height: 356rpx;
+  width: 750rpx;
+  background:linear-gradient(113.7deg,rgba(129,210,239,1),rgba(66,94,192,1));
+  position: relative;
+}
+.cloudRecharge-header{
+  position: absolute;
+  width: 613rpx;
+  top: 71rpx;
+  left: 50%; 
+  margin-left: -306.5rpx;
+  height: 215rpx;
+  z-index: 99
+}
+.cloudRecharge-headerfl{
+  float: left;
+  width: 240rpx;
+  height: 215rpx;
+  color: #FFFFFF;
+}
+.cloudRecharge-headTextOne,.cloudRecharge-headTextTwo{
+  display: block;
+  text-align: center;
+}
+.cloudRecharge-headTextOne{
+  font-size:48rpx;
+}
+.cloudRecharge-headTextTwo{
+  font-size:120rpx;
+}
+.cloudRecharge-headerfr{
+  width: 204rpx;
+  height: 178rpx;
+  float: right;
+}
+.cloudRecharge-water{
+  width: 750rpx;
+  height: 244rpx;
+  position: absolute;
+  bottom: 180rpx;
+}
+.cloudRecharge-water image{
+  width: 100%;
+  height: 420rpx; 
+}
+.cloudRecharge-car{
+  position: absolute;
+  bottom: -83rpx;
+  left: 50%;
+  margin-left: -350rpx;
+  width: 700rpx;
+  height: 160rpx;
+  background-color: #FFFFFF;
+  background:rgba(255,255,255,1);
+  box-shadow:0px 6rpx 6px rgba(79,118,202,0.15);
+border-radius:30rpx;
+}
+.cloudRecharge-carfl{
+  float: left;
+  width: 120rpx;
+  margin-left: 58rpx;
+  margin-top: 33rpx;
+}
+.cloudRecharge-carfr{
+  float: right;
+  font-size:48rpx;
+  line-height: 160rpx;
+  font-family:PingFangSC-Regular;
+  color:rgba(80,119,203,1);
+  margin-right: 67rpx;
+}
+.cloudRecharge-carflICON{
+  width: 52rpx;
+  height: 38rpx;
+  display: block;
+  margin: 0 auto;
+}
+.cloudRecharge-carflText{
+  font-size:30rpx;
+  font-family:PingFangSC-Regular;
+  color:rgba(80,119,203,1);
+}
+.cloudRecharge-body{
+  margin-top: 134rpx;
+  margin-left: 64rpx;
+}
+.cloudRecharge-bodyh{
+  font-size:40rpx;
+  font-family:PingFangSC-Semibold;
+  color:rgba(51,51,51,1);
+}
+.cloudRecharge-bodys{
+  margin-top: 51rpx;
+  padding-bottom: 96rpx;
+  /* display: none; */
+}
+.cloudRecharge-list{
+  width: 623rpx;
+  height: 95rpx;
+  margin-bottom: 41rpx;
+}
+.cloudRecharge-listfl{
+  float: left;
+}
+.cloudRecharge-listflText{
+  display: block;
+  font-size: 32rpx;
+  color: #5077CB;
+}
+.cloudRecharge-listflTime{
+  display: block;
+  font-size: 26rpx;
+  color: #333333;
+  margin-top: 12rpx;
+}
+.cloudRecharge-listfr{
+  float: right;
+  font-size: 28rpx;
+
+}
+.cloudAddcolor{
+  color: #E95128;
+}
+.cloudReducecolor{
+  color: #179A64;
+}
+.cloudRecharge-footer{
+  width: 750rpx;
+  height: 96rpx;
+  background-color: #FFFFFF;
+  position: fixed;
+  bottom: 0;
+}
+.cloudRecharge-footerfl{
+  width: 480rpx;
+  height: 96rpx;
+  float: left;
+  background:linear-gradient(-136.8deg,rgba(129,210,239,1),rgba(66,94,192,1));
+  text-align: center;
+  line-height: 96rpx;
+  color: #FFFFFF;
+  font-size: 36rpx;
+}
+.cloudRecharge-footerfr{
+  float: right;
+  text-align: center;
+   width: 270rpx; 
+  height: 96rpx;
+  font-size: 36rpx;
+  color: #E95128;
+}
+.cloudRecharge-footerfr image{
+  width: 32rpx;
+  height: 36rpx;
+  margin-top: 25rpx;
+  margin -right:10rpx; 
+}
+/* 没有内容 */
+.cloudRecharge-bodysNot{
+  margin-right: 40rpx;
+  height: 414rpx;
+  background-color: rgba(100,157,218,0.05);
+  margin-top: 79rpx;
+  color: #5077CB;
+  font-size:36rpx;
+  text-align: center;
+  line-height: 414rpx;
+}

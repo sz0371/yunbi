@@ -1,0 +1,60 @@
+/* pages/personalAddress/personalAddress.wxss */
+.personalAddressBtn{
+  position: fixed;
+  bottom: 30rpx;
+  height: 88rpx;
+  left: 50%;
+  width: 600rpx;
+  margin-left: -300rpx;
+  background:linear-gradient(180deg,rgba(128,208,238,1),rgba(65,93,192,1));
+  color: #FFFFFF;
+  text-align: center;
+  line-height: 88rpx;
+  font-size: 32rpx;
+  border-radius: 100rpx;
+}
+.personalAddress-box{
+  background:rgba(203,205,206,0.16);
+  border-bottom: 1px solid rgba(203,205,206,0.16);
+}
+.personalAddress-boxs{
+  padding-top: 29rpx;
+  padding-bottom: 36rpx;
+  background-color: #FFFFFF;
+  margin-bottom: 20rpx;
+  padding-left: 49rpx;
+  padding-right: 46rpx;
+}
+.personalAddress-boxsfl,.personalAddress-boxsfr{
+  display: inline-table;
+}
+.personalAddress-boxsfl{
+  width: 595rpx;
+  margin-right: 10rpx;
+}
+.personalAddress-boxsfr{
+  width: 44rpx;
+  position: relative;
+  top: -32rpx;
+}
+.personalAddress-boxsfr image{
+  width: 44rpx;
+  height: 44rpx;
+  position: absolute;
+  top: 0;
+}
+.personalAddress-boxsfl text{
+  font-size: 32rpx;
+  color: #666666;
+  line-height: 35rpx;
+}
+.personalAddress-boxsfl view{
+  font-size: 26rpx;
+  color: #333;
+}
+.personalAddress-lable{
+  margin-top: 21rpx;
+}
+.personalAddress-lable text{
+  margin-right: 27rpx;
+}

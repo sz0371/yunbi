@@ -1,0 +1,14 @@
+<!--pages/personalModifyphone/personalModifyhone.wxml-->
+<view class="pModifyphone-body">
+    <view class="pModifyphones">
+        <label>手机号</label>
+        <input type="number" placeholder="请输入新的手机号"  placeholder-class="psection" bindblur="modifyPhone"></input>
+    </view>
+    <view class="pModifyphones">
+        <label>验证码</label>
+        <input type="number" placeholder="请输入验证码" placeholder-class="psection" bindinput="modifyCode"></input>
+        <view data-phone="{{phones}}" bindtap="getCode">获取验证码</view>
+    </view>
+    <view class="pModifyphones" data-subphone="{{phones}}" data-code="{{sumcode}}" bindtap="sumbitPhone">验证</view>
+</view>
+

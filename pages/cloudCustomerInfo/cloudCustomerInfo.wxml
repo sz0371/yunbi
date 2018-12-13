@@ -1,0 +1,18 @@
+<!--pages/cloudCustomerInfo/cloudCustomerInfo.wxml-->
+<view class="cloudCustomerInfo-header">
+      <image src="{{infoData.headImg}}" class="cloudCustomerInfo-headerIMG"></image>
+      <text class="cloudCustomerInfo-headerName">{{infoData.name}}</text>
+      <text class="cloudCustomerInfo-headerPhome">{{infoData.phone}}</text>
+</view>
+<view class="cloudCustomerInfo-kong"></view>
+<view class="cloudCustomerInfo-btn">
+    <view bindtap="buttonSky" class="cloudCustomerInfoBtn1">转送云朵</view>
+    <view bindtap="buttonPool" class="cloudCustomerInfoBtn4">转转送水池</view>
+</view>
+<!-- 可操作提示框 --> 
+<modal hidden="{{hiddenmodalput}}" title="请输入转送云朵个数" confirm-text="提交" cancel-text="重置" bindcancel="cancel" bindconfirm="confirm">  
+    <input type='text' name="textNumber" bindinput="textNum" placeholder="请输入" auto-focus/>  
+</modal> 
+<modal hidden="{{hiddenmodalputPool}}" title="请输入转送水池个数" confirm-text="提交" cancel-text="重置" bindcancel="cancels" bindconfirm="confirms">  
+    <input type='text' name="textNumbers" bindinput="textNums" placeholder="请输入" auto-focus/>  
+</modal>  

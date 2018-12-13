@@ -1,0 +1,32 @@
+<!--pages/personalModifyAddress/personalModifyAddress.wxml-->
+<view class="pModifyAddressBox">
+    <label>联系人</label> 
+    <input type="text" placeholder="请输入名称" bindblur="userName" value="{{wxusername}}"/>
+</view>
+<view class="pModifyAddressBox">
+    <label>性别</label>
+    <view class="pModifyAddress-sex">
+        <text class="pModifyAddress-sexs {{select==2?'pModifyAddColor':''}}" data-select="2" bindtap="selectSex">女士</text>
+        <text class="pModifyAddress-sexs {{select==1?'pModifyAddColor':''}}" data-select="1" bindtap="selectSex">男士</text>
+    </view>
+</view>
+<view class="pModifyAddressBox">
+    <label>电话</label>
+    <input type="number" placeholder="请输入手机号" bindblur="userphone" value="{{wxuserphone}}" />
+</view>
+<view class="pModifyAddressBox">
+    <label>所在地区</label>
+    <!-- <text class="pModifyAddressBoxtext">请选择</text> -->
+    <picker mode="region"  value="{{region}}"  class="pModifyAddressBoxtext" bindchange="bindCityChange">
+        <image src="/images/lanseright.png"></image>
+        <view class="picker">
+            {{region[0]}} - {{region[1]}} - {{region[2]}}
+        </view>
+    </picker>
+</view>
+
+<textarea class="pModifyAddress-tare" placeholder="请填写详情信息" bindinput="userText"></textarea>
+
+<view class="pModifyAddressBtn" data-sex="{{select}}" data-city="{{region[0]}},{{region[1]}},{{region[2]}}" bindtap="sumberNews">确定</view>
+
+

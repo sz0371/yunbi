@@ -1,0 +1,52 @@
+<!--pages/personalData/personalData.wxml-->
+<view class="personalData-body" catchtap="saveinfo">
+    <view class="personalData-info">
+        <view class="personalData-info-fl">我的照片</view>
+        <view class="personalData-info-fr">
+             <!-- <image class="personalData-info-frleft" src="/images/lanseright.png"></image> -->
+             <image class="personalData-info-frimg" src="{{personalData.headImg}}"></image>   
+        </view>
+    </view>
+    <view class="personalData-list">
+        <view class="personalData-lists">
+            <view class="personalData-list-lable">我的姓名</view>
+            <input type="text" class="personalData-list-type" value="{{personalData.name}}"></input>
+        </view>
+        <view class="personalData-lists">
+            <view class="personalData-list-lable">性别</view>
+            <!-- <view class="personalData-list-type">女</view> -->
+            <picker bindchange="bindPickerChange" value="{{sexIndex}}" range="{{personalArray}}" class="personalData-list-type">
+                <view class="picker">
+                    {{personalArray[sexIndex]}}
+                </view>
+            </picker>
+        </view>
+        <view class="personalData-lists" bindtap="jumpaddress">
+            <view class="personalData-list-lable">收货地址</view>
+             <view class="personalData-list-type" wx:if="{{address}}" url="../personalAddress/personalAddress">{{address}}{{name}}{{phone}}</view> 
+             <view class="personalData-list-type" wx:else>{{personalDatas[0].address}}</view> 
+              
+        </view> 
+        <view class="personalData-lists">
+            <view class="personalData-list-lable">手机号码</view>
+            <navigator url="../personalModifyphone/personalModifyphone" class="personalData-list-type">{{personalData.phone}}</navigator>
+        </view> 
+        <view class="personalData-lists">
+            <view class="personalData-list-lable">生日</view>
+            <!-- <view class="personalData-list-type">生日</view> -->
+            <picker mode="date"  value="{{dateIndex}}"  start="1900-01-01" end="2018-05-24" class="personalData-list-type" bindchange="bindDateChange">
+                <view class="picker">
+                    {{dateIndex}}
+                </view>
+            </picker>
+        </view>
+    </view>
+    <!-- 邀请码 -->
+    <view class="personalData-code">
+        <view class="personalData-code-fl">邀请码</view>
+        <view class="personalData-code-fr">{{personalData.inviteCode}}</view>
+    </view>
+    <!-- 退出登录 -->
+    <view class="personalData-exit" bindtap="exitLogin">退出登录</view>
+    <view class="personalData-save" bindtap="saveText" data-date="{{dateIndex}}" data-sex="{{personalArray[sexIndex]}}" data-mobile="{{personalData.phone}}">保存</view>
+</view>

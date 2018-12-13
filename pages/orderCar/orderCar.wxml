@@ -1,0 +1,120 @@
+<!--pages/orderCar/orderCar.wxml-->
+<view class="order-card" wx:for="{{list}}" wx:key="*this">
+    <view class="order-cardImg">
+      <image class="order-cardImg" src='{{item.productImagePath}}'></image>
+    </view>
+    <view class="order-cardBox">
+          <text class="order-cardTitle">{{item.productName}}</text>
+          <text class="order-cardLable">{{item.standard}}</text>
+          <view class="order-cardBoxs">
+              <view class="order-cardBoxsfl">
+                    <view bindtap='addCount' data-id="{{item.id}}" data-num="{{id==null?item.productNum:productNum}}">+</view>
+                        <text wx:if="{{id==null}}">{{item.productNum}}</text>
+                        <text wx:else>{{productNum}}</text>
+                    <view bindtap='minusCount' data-id="{{item.id}}" data-num="{{id==null?item.productNum:productNum}}">-</view>
+              </view>
+              <view class="order-cardBoxsfr">
+                  <image src="/images/yun.png"></image>{{item.productPrice}}云朵
+              </view>
+          </view>
+    </view>
+</view>
+<!-- <view class="order-card">
+    <view class="order-cardImg"></view>
+    <view class="order-cardBox">
+          <text class="order-cardTitle">披云天然水360ML*12瓶</text>
+          <text class="order-cardLable">1*12瓶／箱</text>
+          <view class="order-cardBoxs">
+              <view class="order-cardBoxsfl">
+                    <view>+</view>
+                        <text>5</text>
+                    <view>-</view>
+              </view>
+              <view class="order-cardBoxsfr">
+                  <image src="/images/yun.png"></image>5云朵
+              </view>
+          </view>
+    </view>
+</view> -->
+<!-- <view class="order-card">
+    <view class="order-cardImg"></view>
+    <view class="order-cardBox">
+          <text class="order-cardTitle">披云天然水360ML*12瓶</text>
+          <text class="order-cardLable">1*12瓶／箱</text>
+          <view class="order-cardBoxs">
+              <view class="order-cardBoxsfl">
+                    <view>+</view>
+                        <text>5</text>
+                    <view>-</view>
+              </view>
+              <view class="order-cardBoxsfr">
+                  <image src="/images/yun.png"></image>5云朵
+              </view>
+          </view>
+    </view>
+</view> -->
+<!-- <view class="order-card">
+    <view class="order-cardImg"></view>
+    <view class="order-cardBox">
+          <text class="order-cardTitle">披云天然水360ML*12瓶</text>
+          <text class="order-cardLable">1*12瓶／箱</text>
+          <view class="order-cardBoxs">
+              <view class="order-cardBoxsfl">
+                    <view>+</view>
+                        <text>5</text>
+                    <view>-</view>
+              </view>
+              <view class="order-cardBoxsfr">
+                  <image src="/images/yun.png"></image>5云朵
+              </view>
+          </view>
+    </view>
+</view> -->
+<view style="height:30rpx;"></view>
+<view class="orderCarList" bindtap='address'>
+    <view class="orderCarListfl">
+        <image src="/images/my-address.png"></image>
+       <view wx:if="{{name==''}}" class='selAdress'> 请选择收货地址</view>
+       <view wx:else class='selAdress'>{{address}}-{{name}}</view>
+    </view>
+    <view class="orderCarListfr">
+        <image src="/images/lanseright.png"></image>
+    </view>
+</view>
+<view class="orderCarList">
+   
+     <view class="section">
+        <view class="section__title"></view>
+        <picker mode="multiSelector" value="{{multiIndex}}"  bindchange="bindMultiPickerChange" range="{{multiArray}}">
+          <view class="picker">
+           <view class="orderCarListfl">
+                <!-- <image src="/images/my-address.png"></image>请选择收货时间-当前选择- {{time}} -->
+                <image src="/images/my-address.png"></image>请选择收货时间{{multiArray[0][multiIndex[0]]}}，{{multiArray[1][multiIndex[1]]}}
+            </view>
+          </view>
+        </picker>
+      </view>
+
+
+    
+   
+</view>
+
+
+
+<view style="height:20rpx;background:rgba(242,242,242,1);"></view>
+<input class="orderCarListText" placeholder="请输入需要的开票信息" bindinput="bindKeyInput"></input>
+<view class="orderCarList">
+    <view class="orderCarListfl">
+        <image src="/images/my-youhui.png"></image>发票制度说明
+    </view>
+    <view class="orderCarListfr">
+        <image src="/images/lanseright.png"></image>
+    </view>
+</view>
+<view style="height:120rpx;"></view>
+<view class="orderCar-footer">
+    <view class="orderCar-footerfl">合计：1个</view>
+    <view class="orderCar-footerfr" data-time="{{multiArray[0][multiIndex[0]]}}，{{multiArray[1][multiIndex[1]]}}" bindtap='submitBtn'>提交订单</view>
+</view>
+

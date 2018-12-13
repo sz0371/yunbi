@@ -1,0 +1,54 @@
+/* pages/cloudCustomerInfo/cloudCustomerInfo.wxss */
+.cloudCustomerInfo-header{
+  padding-top: 55rpx;
+  padding-bottom: 30rpx;
+}
+.cloudCustomerInfo-headerIMG{
+  width: 140rpx;
+  height: 140rpx;
+  border-radius: 50%;
+  border:8rpx solid rgba(212,226,255,1);
+  margin: 0 auto;
+  display: block;
+}
+.cloudCustomerInfo-headerIMG image{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.cloudCustomerInfo-header text{
+  display: block;
+  text-align: center;
+}
+.cloudCustomerInfo-headerName{
+  margin-top: 30rpx;
+  font-size: 40rpx;
+  color: #333333;
+}
+.cloudCustomerInfo-headerPhome{
+  color: #666666;
+  font-size: 30rpx;
+  margin-top: 5rpx;
+}
+.cloudCustomerInfo-kong{
+  height: 20rpx;
+  background-color: rgba(203, 205, 206, .16)
+}
+.cloudCustomerInfo-btn{
+  width: 600rpx;
+  margin:100rpx auto;
+}
+.cloudCustomerInfo-btn view{
+  width: 600rpx;
+  height: 88rpx;
+  margin-left: auto;
+  margin-right: auto;
+  background:linear-gradient(113.7deg,rgba(129,210,239,1),rgba(66,94,192,1));
+box-shadow:0px 4rpx 2rpx rgba(93,165,245,0.45);
+border-radius:100rpx;
+margin-bottom: 44rpx;
+text-align: center;
+line-height: 88rpx;
+font-size: 32rpx;
+color: #FFFFFF;
+}

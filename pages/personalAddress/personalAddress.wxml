@@ -1,0 +1,18 @@
+<!--pages/personalAddress/personalAddress.wxml-->
+<view bindtap='addAdress' class="personalAddressBtn">新增地址</view>
+<!-- <navigator class="personalAddressBtn" url="../personalModifyAddress/personalModifyAddress">新增地址</navigator> -->
+<view>
+  <view class="personalAddress-box" wx:for="{{addressList}}" wx:key="{{*this}}" data-address="{{item.cityArea}}{{item.address}}" data-id="{{item.id}}" data-phone="{{item.phone}}" data-name="{{item.name}}">
+      <view class="personalAddress-boxs" data-address="{{item.cityArea}}{{item.address}}" data-phone="{{item.phone}}" data-name="{{item.name}}">
+          <view class="personalAddress-boxsfl" bindtap="selectAddress" data-address="{{item.cityArea}}{{item.address}}" data-phone="{{item.phone}}" data-name="{{item.name}}" data-id="{{item.id}}">
+                <text data-address="{{item.cityArea}}{{item.address}}" data-phone="{{item.phone}}" data-name="{{item.name}}">{{item.cityArea}}{{item.address}}</text>
+                <view class="personalAddress-lable" data-address="{{item.cityArea}}{{item.address}}" data-phone="{{item.phone}}" data-name="{{item.name}}"><text>{{item.name}}</text>{{item.phone}}</view>
+          </view>
+
+          <!-- 修改按钮 -->
+           <view class="personalAddress-boxsfr" bindtap="modifyaddress">
+           <image wx:if="{{pay!='Y'}}" src="/images/xiugai.png" data-address="{{item.cityArea}}{{item.address}}" data-phone="{{item.phone}}" data-name="{{item.name}}"></image>
+          </view> 
+      </view>                 
+  </view>
+</view>

@@ -1,0 +1,35 @@
+<!--pages/aboutAccount/aboutAccount.wxml-->
+<view class="aboutAccount-bg">
+    <image src="/images/my-poolBg.png"></image>
+    <text class="aboutAccount-bgText">打开支付宝扫码付款</text>
+</view>
+<view class="aboutAccount-box">
+    <view class="aboutAccount-car">
+          <view class="aboutAccount-weixin"><image src="/images/zhifubao.png"></image></view>
+          <view class="aboutAccount-cars">
+              <view class="aboutAccount-carsfl">公司名称</view>
+              <view class="aboutAccount-carsfr">浙江云币科技有限公司</view>
+          </view>
+          <view class="aboutAccount-cars">
+              <view class="aboutAccount-carsfl">开户行</view>
+              <view class="aboutAccount-carsfr">浙商银行杭州城东支行</view>
+          </view>
+          <view class="aboutAccount-cars">
+              <view class="aboutAccount-carsfl">账号</view>
+              <view class="aboutAccount-carsfr">3310010710120100097572</view>
+          </view>
+          <view class="aboutAccount-cars">
+              <view class="aboutAccount-carsfl">联系电话</view>
+              <view class="aboutAccount-carsfr">17764599131（云先生）</view>
+          </view>
+    </view>
+    <view class="aboutAccount-next">
+        <text class="aboutAccount-nextfl">方法一：</text>
+        <text class="aboutAccount-nextfr">截图这张二维码，打开手机支付宝app选择扫一扫功能，在相册中选择这张二维码即可向我们支付款项。</text>
+    </view>
+    <view class="aboutAccount-next">
+        <text class="aboutAccount-nextfl">方法二：</text>
+        <text class="aboutAccount-nextfr">直接打开手机支付宝app扫描此二维码付款。</text>
+    </view>
+</view>
+

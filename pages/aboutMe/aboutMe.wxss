@@ -1,0 +1,145 @@
+/* pages/aboutMe/aboutMe.wxss */
+.aboutMe-car{
+  width:750rpx;
+  height:301rpx; 
+  background:linear-gradient(113.7deg,rgba(129,210,239,1),rgba(66,94,192,1));
+  padding-top: 20rpx;
+  position: relative;
+}
+.aboutMe-car-info{
+  height: 140rpx;
+  margin-left: 64rpx;
+  margin-right: 59rpx;
+  
+}
+.aboutMe-car-info-fl{
+  width: 140rpx;
+  height: 140rpx;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: #000;
+  float: left;
+}
+.aboutMe-car-info-fl image{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.aboutMe-car-info-fr{
+  width: 447rpx;
+  height: 140rpx;
+  float: right;
+  position: relative;
+}
+.aboutMe-car-info-fr-title{
+  display: block;
+  color: #FFFFFF;
+  font-size: 32rpx;
+  line-height: 45rpx;
+  font-family:PingFangSC-Regula;
+  margin-top: 22rpx;
+}
+.aboutMe-car-info-fr-code{
+  display: block;
+  font-family:PingFangSC-Regula;
+  font-size: 30rpx;
+  color:rgba(255,255,255,1);
+  line-height: 42rpx;
+  margin-top: 12rpx;
+  
+}
+.aboutMe-car-info-fr-iconLeft{
+  width: 24rpx;
+  height: 40rpx;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  margin-top: -20rpx;
+  transform: scale(-1,1);
+}
+.aboutMe-car-goods{
+  background-color: #FFFFFF;
+  height: 265rpx;
+  width: 700rpx;
+  position: absolute;
+  left: 50%;
+  margin-left: -350rpx;
+  bottom: -132rpx;
+  box-shadow: 0px 6rpx 12rpx 6rpx rgba(75,111,199,0.14); 
+  border-radius: 30rpx ; 
+}
+.aboutMe-car-goods-title{
+  height: 42rpx;
+  margin-left: 37rpx;
+  margin-right: 37rpx;
+  padding-top: 39rpx;
+  padding-bottom: 39rpx;
+}
+.aboutMe-car-goods-titlefl{
+  float: left;
+  color: #0E0E0E;
+  font-size: 30rpx;
+  font-weight: bold;
+  font-family:PingFangSC-Semibo;
+}
+.aboutMe-car-goods-titlefr{
+  font-size:24rpx;
+  font-family:PingFangSC-Regular;
+  color:rgba(82,124,204,1);
+  line-height:42rpx; 
+  float: right;
+
+}
+.aboutMe-car-goods-box{ 
+  margin-left: 37rpx;
+  margin-right: 37rpx;
+  display: flex;
+}
+.aboutMe-car-goods-tabs{
+  flex-grow: 1;
+  text-align: center;
+  font-size:28rpx;
+  font-family:PingFangSC-Regular;
+  color:rgba(102,102,102,1);
+  line-height:40rpx;
+}
+.aboutMe-car-goods-tabs-icon{
+  width: 61rpx;
+  height: 58rpx;
+  display: block;
+  margin-bottom: 17rpx;
+  margin-left: auto;
+  margin-right: auto;
+}
+.aboutMe-car-list{
+  margin-top: 200rpx;
+}
+.aboutMe-car-lists{
+  margin-bottom:58rpx; 
+  margin-left: 53rpx;
+  margin-right: 53rpx;
+  height: 42rpx;
+}
+.aboutMe-car-lists-fl{
+  float: left;
+}
+.aboutMe-car-lists-fl-icon{
+  width: 42rpx;
+  height: 42rpx;
+  float: left;
+  margin-right: 25rpx;
+}
+.aboutMe-car-lists-fl-text{
+  font-size:30rpx;
+  font-family:PingFangSC-Regular;
+  color:rgba(102,102,102,1);
+  line-height:42rpx;
+  display: block;
+  float: left;
+}
+.aboutMe-car-lists-fr{
+  width: 13rpx;
+  height: 22rpx;
+  float: right;
+  margin-top: 10rpx;
+}

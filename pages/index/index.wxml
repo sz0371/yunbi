@@ -1,0 +1,35 @@
+<!--index.wxml-->
+ <swiper indicator-dots="{{indicatorDots}}"
+      autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" indicator-color="{{indicatorColor}}" indicator-active-color="{{indeicatorActcolor}}" current='{{currentIndex}}' circular='{{circular}}' vertical='{{vertical}}'  display-multiple-items='{{displayItem}}'>
+      <block wx:for="{{imgUrls}}" wx:key="*this">
+        <swiper-item>
+          <image src="{{item.adImagePath}}" class="slide-image" width="355" height="150"/>
+        </swiper-item>
+      </block>
+</swiper> 
+
+<scroll-view scroll-x="true" class="cloudShopping-tab" scroll-left="{{scrollLeft}}">
+   <block wx:for="{{navListC}}" wx:key="*this">
+       <view data-id="{{item.id}}" class="cloudShopping-tab-list {{cloudIndexTab==index ? 'active':''}}" data-current="{{index}}" bindtap="cloudShoppingTabList">{{item.name}}</view>
+   </block>
+</scroll-view>
+<swiper class="cloudShopping-box" current="{{cloudIndexTab}}" duration="300" bindchange="cloudShoppingBoxChange" style="height:{{winHeight+80}}rpx">
+    <swiper-item wx:for="{{navListC}}" wx:key="*this" data-id="{{item.id}}" >
+        <scroll-view scroll-y="true" class="cloudShopping-height" >
+                <block wx:for="{{list}}" wx:key="*this">
+                    <view class="cloudShopping-list" catchtap="goDetails" data-id="{{item.id}}">
+                          <view class="cloudShopping-list-fl">
+                              <image src="{{item.productImagePath}}"></image>
+                          </view>
+                          <view class="cloudShopping-list-fr">
+                            <text class="cloudShopping-list-fr-title">{{item.name}}</text>
+                            <text class="cloudShopping-list-fr-lable">{{item.standard}}</text>
+                            <view class="cloudShopping-list-fr-cloud"><image src="/images/yun.png"></image>{{item.price}}云朵</view>
+                            <image  catchtap="addCart" class="cloudShopping-list-fr-car"  data-id="{{item.id}}" src="/images/shopping.jpg"></image>
+                          </view>
+                    </view>
+                </block>
+        </scroll-view>
+    </swiper-item>
+</swiper>
+

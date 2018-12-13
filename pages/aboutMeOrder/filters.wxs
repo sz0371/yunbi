@@ -1,0 +1,23 @@
+function status(value) {
+  var statusJson  = {};
+  var cloudStatus = "";
+  var cloudColor  = "";
+  if (value==-2){
+    cloudStatus = "取消订单";
+    cloudColor = "#afafaf";
+  } else if(value == -1){
+    cloudStatus = "待付款";
+    cloudColor  = "#E4613E";
+  } else if(value == 1 || value == 2){
+    cloudStatus = "配送中";
+    cloudColor  = "#4b71ca";
+  } else if(value == 3){
+    cloudStatus = "已完成";
+    cloudColor  = "#afafaf";
+  }
+  statusJson.cloudStatus = cloudStatus;
+  statusJson.cloudColor = cloudColor;
+
+  return statusJson;
+}
+module.exports={status:status}

@@ -1,0 +1,64 @@
+function status(value) {
+  var statusJson          = {};
+  // 我的订单过滤参数
+  var cloudStatus         = "";
+  var cloudColor          = "";
+  // 我的订单详情过滤参数
+  var orderState          = "";
+  var orderStatus         = "";
+  // 我的账户单位过滤参数
+  var cloudCompany        = "";
+  var cloudCompanyColor   = "";
+  if (value == -2) {
+    cloudStatus     = "取消订单";
+    cloudColor      = "#afafaf";
+    orderState      = "订单已取消";
+    orderStatus     = "待支付";
+  } else if (value == -1) {
+    cloudStatus     = "待付款";
+    cloudColor      = "#E4613E";
+    orderState      = "订单待支付";
+    orderStatus     = "待支付";
+  } else if (value == 1) {
+    cloudStatus     = "配送中";
+    cloudColor      = "#4b71ca";
+    orderState      = "订单待发货";
+    orderStatus     = "已支付";
+    cloudCompany    = "云朵";
+  } else if (value == 2){
+    cloudStatus     = "配送中";
+    cloudColor      = "#4b71ca";
+    orderState      = "订单待收货";
+    orderStatus     = "已支付";
+    cloudCompany    = "云币";
+  }else if (value == 3) {
+    cloudStatus     = "已完成";
+    cloudColor      = "#afafaf";
+    orderState      = "订单已完成";
+    orderStatus     = "已支付";
+    cloudCompany    = "水滴";
+  } else if(value == 4){
+    cloudCompany    = "水池";
+  }
+  if (value == '-'){
+    cloudCompanyColor = "#179A64";
+  }
+  statusJson.cloudStatus  = cloudStatus;
+  statusJson.cloudColor   = cloudColor;
+  statusJson.orderState   = orderState;
+  statusJson.orderStatus  = orderStatus;
+  statusJson.cloudCompany = cloudCompany;
+  statusJson.cloudCompanyColor = cloudCompanyColor;
+  return statusJson;
+}
+// 过滤数值类型
+function ints(value){
+    var valueType = {};
+    var cloudGive = parseInt(value);
+    valueType.cloudGive = cloudGive;
+    return valueType;
+}
+module.exports = { 
+  status: status, 
+  ints: ints
+}

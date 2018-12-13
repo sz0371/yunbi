@@ -1,0 +1,33 @@
+<!--pages/commodityDetails/commodityDetails.wxml-->
+<!--是否显示圆点，自动播放， 间隔时间， 监听滚动和点击事件-->
+<swiper indicator-dots="true" autoplay="true" duration="1000" bindchange="listenSwiper" >
+<!--swiper-item只能包含一个节点再多会自动删除-->
+     <swiper-item wx:for="{{photoAlbums}}" wx:key="*this">
+         <view style="background: green; height: 150px"><image style="width:100%;height:100%" src="{{item}}"></image></view>
+    </swiper-item>
+   
+</swiper>
+<!-- 商品信息 -->
+<view style="height:20rpx; background:rgba(0,0,0,0.05)"></view>
+<view class="detailsBox">
+    <text class="detailsBoxTitle">{{list.name}}</text>
+    <view class="detailsBoxs">
+        <view class="detailsBoxsfl">{{list.standard}}</view>
+        <view class="detailsBoxsfr">
+            <image class="detailsBoxfrICON" src="/images/yun.png"></image>{{list.price}}云朵
+        </view>
+    </view>
+</view>
+<view style="height:20rpx; background:rgba(0,0,0,0.05)"></view>
+<view class="detailsbody">
+    <text class="detailsbodyTitle">商品详情</text>
+    <view class="detailsbodys">
+       <rich-text nodes="{{list}}"></rich-text> 
+    </view>
+</view>
+<view class="detailsFooter">
+    <view class="detailsFooterfl" bindtap='goPay'>直接购买</view>
+    <view class="detailsFooterfr">
+        <image src="/images/shopping2.png" bindtap='addCart'></image>
+    </view>
+</view>

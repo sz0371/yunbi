@@ -1,0 +1,119 @@
+/* pages/personalData/personalData.wxss */
+.personalData-body{
+  width: 100%;
+  height: 1186rpx;
+  background-color:rgba(203,205,206,0.16);
+  padding-top: 20rpx;
+}
+.personalData-info{
+  background-color: #FFFFFF;
+  height: 205rpx;
+  
+}
+.personalData-info-fl{
+  float: left;
+  line-height: 205rpx;
+  margin-left: 83rpx;
+  color: #666666;
+  font-size: 30rpx;
+
+}
+.personalData-info-fr{
+  float: right;
+  margin-right: 56rpx;
+  margin-top: 48rpx;
+}
+.personalData-info-frimg{
+  width: 104rpx;
+  height: 104rpx;
+  border-radius: 50%;
+  border: 8rpx solid #D4E2FF;
+  float: right;
+  background-color: #666666;
+}
+.personalData-info-frleft{
+  float: right;
+  width: 13rpx;
+  height: 22rpx;
+  display: block;
+  margin-top: 41rpx;
+  margin-left: 39rpx;
+}
+.personalData-list{
+  background-color: #FFFFFF;
+  padding-left: 83rpx;
+  padding-right: 56rpx;
+  margin-top: 20rpx;
+  padding-top: 42rpx;
+  padding-bottom: 38rpx;
+}
+.personalData-lists{
+  height: 42rpx;
+  margin-bottom: 68rpx;
+  font-size: 30rpx;
+}
+.personalData-lists:last-child{
+  margin-bottom: 0;
+}
+.personalData-list-lable{
+  float: left;
+  font-family:PingFangSC-Regular;
+  color:rgba(102,102,102,1);
+  line-height:42rpx;
+}
+.personalData-list-type{
+  float: right;
+  font-family:PingFangSC-Regular;
+  color:rgba(184,184,184,1);
+  line-height:42rpx;
+  text-align: right;
+  width: 400rpx;
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+}
+.personalData-code{
+  padding-left: 83rpx;
+  padding-right: 109rpx;
+  background-color: #FFFFFF;
+  height: 120rpx;
+  margin-top: 20rpx;
+  
+}
+.personalData-code-fl{
+  font-size:30rpx;
+  font-family:PingFangSC-Regular;
+  color:rgba(102,102,102,1);
+  float: left;
+  line-height: 120rpx;
+}
+.personalData-code-fr{
+  font-size:30rpx;
+  font-family:PingFangSC-Regular;
+  color:rgba(83,125,205,1);
+  line-height: 120rpx;
+  float: right;
+}
+/* 退出登录 */
+.personalData-exit,.personalData-save{
+  height: 88rpx;
+  background-color: #FFFFFF;
+  color: #000000;
+  font-size: 32rpx;
+  text-align: center;
+  line-height: 88rpx;
+  
+}
+.personalData-exit{
+  border-top: 1px solid rgba(203,205,206,0.16);
+}
+.personalData-save{
+  width: 600rpx;
+  margin-top: 50rpx; 
+  border-radius: 100rpx;
+  margin-left: auto;
+  margin-right: auto;
+  color: #FFFFFF;
+  background:linear-gradient(113.7deg,rgba(129,210,239,1),rgba(66,94,192,1));
+box-shadow:0px 2px 2px 1px rgba(93,165,245,0.45);
+}

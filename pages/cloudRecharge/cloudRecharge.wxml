@@ -1,0 +1,57 @@
+<!--pages/cloudCoin/cloudCoin.wxml-->
+<wxs src='../../utils/filters.wxs' module='filters'/>
+<swiper indicator-dots="{{indicatorDots}}"
+      autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" indicator-color="{{indicatorColor}}" indicator-active-color="{{indeicatorActcolor}}" current='{{currentIndex}}' circular='{{circular}}' vertical='{{vertical}}'  display-multiple-items='{{displayItem}}'>
+      <block wx:for="{{imgUrls}}" wx:key="*this">
+        <swiper-item>
+          <image src="{{item.adImagePath}}" class="slide-image" width="355" height="150"/>
+        </swiper-item>
+      </block>
+</swiper> 
+<!-- 购买云朵 -->
+<view class="cloudRecharger-body">
+    <text class="cloudRecharger-header">请选择购买数量</text>
+    <view class="cloudRecharger-bodyNum">
+        <view class="cloudRecharger-bodyNums">
+              <!-- cloudRechargerAddColor -->
+              <block wx:for="{{ruleList}}" wx:key="*this">
+                  <view class="cloudRecharger-bodyNums-box {{selectRecharger==item.max?'cloudRechargerAddColor':'' }}" data-select="{{item.max}}" data-give="{{filters.ints((item.max * item.denominator)/item.numerator).cloudGive}}" bindtap="chooseCatalog">
+                      <text class="cloudRechargerNumber" data-select="{{item.max}}" data-give="{{filters.ints((item.max * item.denominator)/item.numerator).cloudGive}}">{{item.max}}个</text>
+                      <text class="cloudRechargerGive" data-select="{{item.max}}" data-give="{{filters.ints((item.max * item.denominator)/item.numerator).cloudGive}}">送{{filters.ints((item.max * item.denominator)/item.numerator).cloudGive}}</text>  
+                  </view>
+              </block>
+              
+        </view>
+    </view>
+
+    <!-- 其它金额 -->
+    <view class="cloudRecharger-othder">
+          <view class="cloudRecharger-othderfl"><label>其它数量：</label><input type="number" placeholder="请输入个数" bindinput="otherMoney"></input></view>
+          <view hidden="{{otherHidden}}" class="cloudRecharger-othderfr">(送{{otherNumber}})</view>
+    </view>
+    <view class="cloudRecharger-activity">
+        <view class="cloudRecharger-activityfl"></view>
+        <view class="cloudRecharger-activityfr">
+            <view class="cloudRecharger-activityfrl">
+                <image src="/images/promotion.png"></image>促销活动
+            </view>
+            <view class="cloudRecharger-activityfrr">披云水上市期间，公司实行 买十送一活动</view>
+        </view>
+    </view>
+    <view class="cloudRecharger-rHeader">云朵权益</view>
+    <view class="cloudRecharger-rbox">
+        <view class="cloudRecharger-rboxfl"><image src="/images/prepaid-1.png" class="cloudRecharger-rIcon1"></image>基础权益</view>
+        <view class="cloudRecharger-rboxfr">一朵云价值人民币20元，兑换360ml（1*12） 一箱水，或4L桶装水一桶。 </view>
+    </view>
+    <view class="cloudRecharger-rbox">
+        <view class="cloudRecharger-rboxfl"><image src="/images/prepaid-2.png" class="cloudRecharger-rIcon2"></image>多充多送</view>
+        <view class="cloudRecharger-rboxfr">一次性购买10朵云以上，给予一定比例的赠送。</view>
+    </view>
+    <view class="cloudRecharger-rbox">
+        <view class="cloudRecharger-rboxfl"><image src="/images/prepaid-3.png" class="cloudRecharger-rIcon3"></image>其他权益</view>
+        <view class="cloudRecharger-rboxfr">朵云可以兑换云朵商城中的鉴真青瓷、如云茶、龙泉三珍等商品，还可以在云币公司线下体验中心消费。</view>
+    </view>
+</view>
+<view class="cloudRechargerbtm">
+  <view class="cloudRecharger-buy" bindtap="equityBtn" data-givenum="{{givenum}}" data-sky="{{selectRecharger}}" data-money="{{selectRecharger*20}}">购买（{{selectRecharger*20}}元）</view>
+</view>

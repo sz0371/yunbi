@@ -1,0 +1,103 @@
+<!--pages/cloudPoolbuy/cloudPoolbuy.wxml-->
+<view hidden="{{cloudPoolbuyHidden}}">
+    <view class="cloudPoolbuy-header">
+          <image class="cloudPoolbuy-header" src="/images/companyBg1.png"></image>
+          <view class="cloudPoolbuy-car"  style="background-image: url('/images/dingdanmokuai.png');background-size: 100% 100%">
+              <view class="cloudPoolbuy-carbox">
+                    <view class="cloudPoolbuy-carfl"><image src="/images/poolFont.png"></image></view>
+                    <view class="cloudPoolbuy-carfr">
+                        <text class="cloudPoolbuy-carfr-title">披云小水池</text>
+                        <text class="cloudPoolbuy-carfr-lable">来自绿水青山的问候！</text>
+                        <view class="cloudPoolbuy-carfr-num">
+                            <text>X</text>{{poolNum}}
+                        </view>
+                    </view> 
+              </view>
+              <view class="cloudPoolbuy-lable">
+                  <view class="cloudPoolbuy-lablefl">
+                      <text style="color: #666666;">总计：</text>{{poolNum*500}}朵云（{{poolNum*10000}}元）
+                  </view>
+                  <view class="cloudPoolbuy-lablefr">
+                      <text style="color: #666666;">总计：</text>{{poolNum*160}}朵云
+                  </view>
+              </view>
+          </view>
+    </view>
+    <view class="cloudPoolbuy-box" hidden="{{hiddenpay}}">
+        <view class="cloudPoolbuy-box-title">请选择支付方式</view>
+        <radio-group class="" bindchange="radioChange">
+            <label class="cloudPoolbuy-box-list radio" checked="checked">
+                <radio value="2" name="radioType" bindtap="radio" id="{{radioType}}"/>线下支付
+            </label>
+            <label class="cloudPoolbuy-box-list radio" checked="checked">
+                <radio value="1" name="radioType" bindtap="radio" id="{{radioType}}"/>在线支付
+            </label>
+        </radio-group>
+        <!-- <view class="cloudPoolbuy-box-list">
+            <image src="/images/checked_1.jpg"  class="cloudPoolbuyIcon"></image>
+            <text class="cloudPoolbuyText">在线支付</text>
+        </view> -->
+        <view class="cloudPoolbuyBtn" bindtap="payOk" id="{{payType}}">确定</view>
+    </view> 
+    <!-- 购买 -->
+    <view class="cloudPoolbuy-box" hidden="{{hiddenInfo}}">
+        <view class="cloudPoolbuy-box-title">填写认购信息</view>
+        <view class="cloudPoolbuy-box-lists">
+            <text class="cloudPoolbuy-box-listfl">姓名/单位</text>
+            <input class="cloudPoolbuy-box-listfr" name="userName" placeholder="请输入姓名/单位"  bindinput="userNameInput"/>
+        </view>
+        <view class="cloudPoolbuy-box-lists">
+            <text class="cloudPoolbuy-box-listfl">收货地址</text>
+            <input class="cloudPoolbuy-box-listfr" name="userAddress"  placeholder="请输收货地址" bindinput="userAddressInput"/>
+        </view>
+        <view class="cloudPoolbuy-box-lists">
+            <text class="cloudPoolbuy-box-listfl">手机号码</text>
+            <input class="cloudPoolbuy-box-listfr" name="userPhone"  placeholder="请输手机号码" bindinput="userPhoneInput"/>
+        </view>
+        <view class="cloudPoolbuy-box-lists">
+            <text class="cloudPoolbuy-box-listfl">公民身份证号码</text>
+            <input class="cloudPoolbuy-box-listfr" name="userIDCar"  placeholder="请输身份证" bindinput="userIDCarInput" bindblur="userIDCarFocus"/>
+        </view>
+        <view class="cloudPoolbuyBtn" bindtap="cloudbuy">确定</view>
+    </view>
+</view>
+<view class="cloudPoolLaw" hidden="{{cloudPoolLawhidden}}">
+    <view class="cloudPoolLawText">
+        <text class="cloudPoolLawText-title">“披云小水池”认购协议</text>
+        <text class="cloudPoolLawTexts">甲方：浙江云币科技有限公司 </text>
+        <text class="cloudPoolLawTexts">地址：浙江省杭州市上城区大资福庙前107号</text>
+        <text class="cloudPoolLawTexts">法人或指定代理人：叶康</text>
+        <text class="cloudPoolLawTexts">乙方：{{userName}}</text>
+        <text class="cloudPoolLawTexts">住址：{{userAddress}}</text>
+        <text class="cloudPoolLawTexts">公民身份证号码：{{userIDCar}} </text>
+        <text class="cloudPoolLawTexts">联系电话：{{userPhone}} </text>
+        <text class="cloudPoolLawTexts">乙方认购数量：{{num}} ，时间： 年 即：2018-06-06至2019-06-06</text>
+        <text class="cloudPoolLawTexts" style="margin-top:10rpx;">“披云小水池”是浙江云币科技有限公司（以下简称甲方）推出的特色产品。乙方对甲方所提供的“披云小水池”产品特性己充分了解，并签定以下协议供双方执行：</text>
+        <text class="cloudPoolLawTexts" style="margin-top:10rpx;">一、每个“披云小水池”价值1万元人民币（等同500朵云）。消费者以“个”为单位可以多个购买。消费者认购成功后，小水池保存在消费者的手机账户，每年可产生一定的朵云。“披云小水池”认购时间1年起，最多可5年。现在签订协议，消费者可以每年获得订购金额32%朵云回报。</text>
+        <text class="cloudPoolLawTexts" style="margin-top:10rpx;">二、披云小水池的权益 
+1，每年获得固定的朵云回报，可用于“朵云商城”消费，及公司线下体验店“披云堂”消费使用。2，免费參加甲方组织的各种健康养生、文化大讲坛活动。3，每年一次免费的“中国青瓷小镇-宝溪旅游景区-披云山探訪之旅”（限2人或价值1000元礼品）。</text>
+        <text class="cloudPoolLawTexts" style="margin-top:10rpx;">三、关于“披云小水池”续签及退订的约定：协议到期后，乙方可以续签或选择退订。若续签，双方另行签订协议。若提出退订，甲方在7个工作日內办理相关手续并退回款项。</text>
+        <text class="cloudPoolLawTexts" style="margin-top:10rpx;">四、关于协议期间，乙方提前领取或中途退订小水池的约定： 
+协议期间，乙方可以任意领取订购的小水池(一个水池等于500朵云)，领取后，本协议视为终止。乙方将不再享有小水池客户的权益。若再订购，双方重新签订协议。 
+若协议期内，乙方要求提前退订小水池，乙方必须扣除甲方当年给予的朵云收益，并向甲方支付总额10%的违约金。甲方承诺一个月内退回款项。</text>
+        <text class="cloudPoolLawTexts" style="margin-top:10rpx;">五、关于协议生效：乙方在填写相关信息，提交，在协议上点击同意。在支付订购款项后，本协议自动生效。</text>
+        <text class="cloudPoolLawTexts" style="margin-top:10rpx;">六、本协议一式两份，双方各持一份。因履行本协议产生纠纷由甲乙双方协商解决，协商不成由甲方所在地方人民法院处理。</text>
+        <text class="cloudPoolLawTexts" style="margin-top:10rpx;">披云小水池专属服务电话：4008877129、 13735972121（云先生） 
+（特别注明：1朵云等同1箱360ml(1*12)瓶装水，或1桶4L桶装水）。</text>
+        <text class="cloudPoolLawTexts" style="margin-top:10rpx;">甲方：浙江云币科技有限公司 </text>
+        <text class="cloudPoolLawTexts">法人或代理人：叶康  </text>
+
+        <text class="cloudPoolLawTexts" style="margin-top:20rpx">乙方: {{userName}}</text>
+        <text class="cloudPoolLawTexts">乙方:{{userName}}</text>
+
+        <text class="cloudPoolLawTexts" style="margin-top:10rpx;">公司名称：浙江云币科技有限公司</text>
+        <text class="cloudPoolLawTexts">地址：杭州上城区大资福庙前107号（凤凰谷10号</text>
+        <text class="cloudPoolLawTexts">开户行：浙商银行杭州城东支行 </text>
+        <text class="cloudPoolLawTexts">账户：3310010710120100097572  </text>
+        <text class="cloudPoolLawTexts">签订时间：{{formatTime}}</text>
+    </view>
+    <view class="cloudPoolLawBtn">
+        <view class="cloudPoolLawBtnfl" id="{{poolNum}}" data-type="{{payType}}" bindtap="agreeNext">同意</view>
+        <view class="cloudPoolLawBtnfr" bindtap="notNext">不同意</view>
+    </view>
+</view>

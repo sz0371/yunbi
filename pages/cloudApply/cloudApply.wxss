@@ -1,0 +1,47 @@
+/* pages/cloudApply/cloudApply.wxss */
+.cloudApply-box{
+  padding-top: 199rpx;
+  margin-left: 125rpx;
+  margin-right: 125rpx;
+}
+.cloudApply-btn{
+  height: 150rpx;
+  border: 1px solid #5988D1;
+  margin-bottom: 60rpx;
+  border-radius: 10rpx;
+}
+.cloudApply-btn text{
+  display: block;
+  text-align: center;
+}
+.cloudApply-btn text:first-child{
+  font-size: 34rpx;
+  margin-top: 28rpx;
+  color: #4564C3;
+}
+.cloudApply-btn text:last-child{
+  font-size: 24rpx;
+  color: #A4A4A4;
+  margin-top: 9rpx;
+}
+.cloudApplyAddColor{
+  background:linear-gradient(136.6deg,rgba(112,179,226,1),rgba(79,118,202,1));
+  border:1px solid rgba(89,136,209,1);
+}
+.cloudApplyAddColor text:first-child,.cloudApplyAddColor text:last-child{
+  color: #FFFFFF;
+}
+.cloudApplysubmit{
+  width: 600rpx;
+  height: 88rpx;
+  background:linear-gradient(113.7deg,rgba(129,210,239,1),rgba(66,94,192,1));
+box-shadow:0px 4rpx 2rpx rgba(93,165,245,0.45);
+border-radius:100rpx;
+margin-left: auto;
+margin-right: auto;
+margin-top: 176rpx;
+text-align: center;
+font-size: 32rpx;
+line-height: 88rpx;
+color: #FFFFFF;
+}

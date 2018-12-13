@@ -1,0 +1,86 @@
+/* pages/cloudCustomerSearch/cloudCustomerSearch.wxss */
+.searchBox{
+  width: 750rpx;
+  height:83rpx;
+  background:linear-gradient(90deg,rgba(127,205,237,1),rgba(65,93,192,1));
+  padding-top: 17rpx;
+  position: fixed;
+  top: 0;
+}
+.searchBoxs{
+  width: 700rpx;
+  height: 66rpx;
+  border-radius: 100rpx;
+  background:rgba(255,255,255,1);
+  margin-left: auto;
+  margin-right: auto; 
+  
+}
+.searchBoxs image{
+  width: 47rpx;
+  height: 47rpx;
+  display: block;
+  float: left;
+  margin-top: 12rpx;
+  margin-left: 20rpx;
+}
+.searchBoxs input{
+  width: 600rpx;
+  /* margin-top: 17rpx; */
+  float: left;
+  height: 66rpx;
+  letter-spacing: 2rpx;
+  line-height: 66rpx;
+  font-size:24rpx;
+  font-family:PingFangSC-Regular;
+  color:rgba(176,176,176,1);
+}
+.searchList{
+  margin-top: 140rpx;
+}
+.searchList-box{
+  border-bottom: 1px solid rgba(212,226,255,.5);
+}
+.cloudCustomer-blist{
+  margin-top: 43rpx;
+  height: 112rpx;
+  margin-left: 45rpx;
+  margin-bottom: 40rpx;
+  
+}
+.cloudCustomer-blistfl{
+  width: 112rpx;
+  height: 112rpx;
+  border-radius: 50%;
+  border: 8rpx solid rgba(212,226,255,1);
+  float: left;
+}
+.cloudCustomer-blisfr{
+  float: left;
+  width: 395rpx;
+  height: 86rpx;
+  margin-top: 15rpx;
+  margin-left: 35rpx;
+}
+.cloudCustomer-blisfr text{
+  display: block;
+  
+}
+.cloudCustomer-blisfr text:first-child{
+  color: #999999;
+  font-size: 30rpx;
+  font-family:PingFangSC-Medium;
+}
+.cloudCustomer-blisfr text:last-child{
+  font-size:26rpx;
+  font-family:PingFangSC-Regular;
+  color:rgba(172,172,172,1);
+  margin-top: 7rpx;
+}
+.cloudCustomer-blisleft{
+  float: right;
+  width: 13rpx;
+  height: 22rpx;
+  margin-right: 51rpx;
+  margin-top: 18rpx;
+}

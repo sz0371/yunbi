@@ -1,0 +1,194 @@
+.aboutMeOrder-nav{
+    height: 108rpx;
+    width: 100%; 
+    box-sizing: border-box;
+    overflow: hidden;
+    line-height: 108rpx;
+    background: #FFFFFF; 
+    font-size: 30rpx; 
+    white-space: nowrap;
+    position: fixed;
+    top: 0; 
+    left: 0; 
+    z-index: 99;
+    display: flex;
+  }
+.aboutMeOrder-navs{
+  display: inline-block;
+  width: 25%;
+  text-align: center;
+  font-size:30rpx;
+  font-family:PingFangSC-Semibold;
+  color:rgba(169,169,169,1);
+}
+.aboutMeOrder-navs.active{
+  color: #333333;
+  font-size: 34rpx;
+  position: relative;
+}
+.aboutMeOrder-navs.active:after{
+   content: "";
+   display: block;
+   height: 8rpx;
+   width: 55rpx;
+  background:linear-gradient(117.8deg,rgba(126,203,236,1),rgba(80,119,203,1));
+   position: absolute; 
+   bottom: 0;
+   left: 50%;
+   margin-left: -27.5rpx;
+   border-radius: 100rpx;
+}
+ .aboutMeOrder-box{
+  margin-top: 108rpx;
+  background:rgba(203,205,206,0.16);
+}
+.aboutMeOrder-height{
+  height: 100%;
+  
+}
+
+.aboutMeOrderLists{
+  min-height: 415rpx;
+  background:rgba(255,255,255,1);
+  box-shadow: 0px 6px 12px 6px rgba(75,111,199,0.14);
+  border-radius:30rpx ; 
+  margin-left: 25rpx;
+  margin-right: 25rpx; 
+  padding-left: 21rpx;
+  padding-right: 28rpx;
+  margin-top: 21rpx;
+}
+.aboutMeOrderLists-title{
+  height: 42rpx;
+  padding-top: 24rpx;
+  padding-bottom: 23rpx;
+  margin-left: 20rpx;
+}
+.aboutMeOrderLists-title-fl{
+  float: left;
+  font-size:30rpx;
+  font-family:PingFangSC-Semibold;
+  color:rgba(228,97,62,1);
+  line-height:42rpx;
+}
+.aboutMeOrderLists-title-fr{
+  float: right;
+  font-size:24rpx;
+  font-family:PingFangSC-Regular;
+  color:rgba(102,102,102,1);
+  line-height:42rpx;
+}
+.aboutMeOrderLists-box{
+  height: 186rpx;
+}
+.aboutMeOrderLists-box-fl{
+  float: left;
+  width: 186rpx;
+  height: 186rpx;
+  border-radius: 16rpx;
+  border: 1px solid #EAEAEA;
+}
+.aboutMeOrderLists-box-fl image{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+}
+.aboutMeOrderLists-box-fr{
+  float: left;
+  margin-left: 20rpx;
+  width: 445rpx;
+  height: 186rpx;
+  position: relative;
+}
+.aboutMeOrderLists-box-fr-title{
+  font-size:30rpx;
+  font-family:PingFangSC-Semibold;
+  color:rgba(102,102,102,1);
+   line-height:30rpx;  
+}
+.aboutMeOrderLists-box-fr-num{
+  height:42rpx; 
+  border-radius: 100rpx ; 
+  border: 1px solid #979797;
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 24rpx;
+  font-size:24rpx;
+  font-family:PingFangSC-Regular;
+  color:rgba(164,164,164,1);
+  line-height:42rpx;
+  padding-left: 5rpx;
+  padding-right: 5rpx;
+}
+.aboutMeOrderLists-box-fr-chip{
+  position: absolute;
+  right: 0;
+  bottom: 24rpx;
+  font-size:34rpx;
+  font-family:PingFangSC-Semibold;
+  color:rgba(102,102,102,1);
+  line-height:48rpx;
+}
+ .aboutMeOrderLists-operation{
+   height: 110rpx;
+  /* border: 1px solid #979797; */
+   clear: both;
+   margin-top: 28rpx;
+}
+.aboutMeOrderLists-operation-fl{
+   float: left;
+   display: block;
+  font-size:28rpx;
+  font-family:PingFangSC-Regular;
+  color:rgba(75,113,202,1);
+  line-height:31rpx; 
+  height: 31rpx;
+  margin-top: 41rpx;
+} 
+.aboutMeOrderLists-operation-fl-icon{
+  width: 42rpx;
+  height: 31rpx;
+  display: block;
+  float: left;
+  margin-right: 10rpx;
+}
+ .aboutMeOrderLists-operation-fr{
+  float: right;
+  width: 300rpx;
+  margin-top: 26.5rpx;
+
+} 
+.aboutMeOrderLists-close,.aboutMeOrderLists-info,.aboutMeOrderLists-pay{
+  float: right;
+  height:60rpx; 
+  line-height:60rpx; 
+  font-family:PingFangSC-Regular;
+  text-align: center;
+  font-size:24rpx;
+  display: block;
+  border-radius: 10rpx ;
+  margin-left: 15rpx;
+}
+.aboutMeOrderLists-close,.aboutMeOrderLists-info{
+  border: 1rpx solid #457FCA;
+  color:rgba(80,119,203,1);
+
+}
+.aboutMeOrderLists-close{
+  border-radius: 10rpx;
+  width:100rpx;
+}
+.aboutMeOrderLists-info{
+  width:150rpx;
+  color:rgba(80,119,203,1);
+  border: 1px solid #457FCA;
+  text-align: center;
+}
+.aboutMeOrderLists-pay{
+  width:102rpx;
+  height: 62rpx;
+  background:linear-gradient(113.7deg,rgba(129,210,239,1),rgba(66,94,192,1));
+  color:rgba(255,255,255,1);
+}

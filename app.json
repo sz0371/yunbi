@@ -1,0 +1,61 @@
+{
+  "pages": [
+    "pages/setup/setup",
+    "pages/index/index",
+    "pages/aboutMe/aboutMe",
+    "pages/aboutMeOrder/aboutMeOrder",
+    "pages/personalAddress/personalAddress",
+    "pages/shoppingCart/shoppingCart", 
+    "pages/login/login", 
+    "pages/cloudRecharge/cloudRecharge",
+    "pages/cloudAccount/cloudAccount",  
+    "pages/personalModifyAddress/personalModifyAddress",   
+    "pages/personalData/personalData",
+    "pages/personalModifyphone/personalModifyphone",   
+    "pages/cloudPool/cloudPool",
+    "pages/cloudPoolbuy/cloudPoolbuy",
+    "pages/cloudCustomerSearch/cloudCustomerSearch",
+    "pages/cloudCustomer/cloudCustomer",
+    "pages/cloudCustomerInfo/cloudCustomerInfo",   
+    "pages/commodityDetails/commodityDetails",
+    "pages/orderDetails/orderDetails",    
+    "pages/orderCar/orderCar",
+    "pages/password/password",
+    "pages/register/register",
+    "pages/cloudApply/cloudApply",
+    "pages/aboutAccount/aboutAccount",
+    "pages/aboutMeCode/aboutMeCode"   
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#425EC0",
+    "navigationBarTitleText": "披云小水池",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "selectedColor": "#517ACC",
+    "color": "#C6C6C6",
+    "backgroundColor": "#FFFFFF",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "云朵商城",
+        "iconPath": "images/footbar_2_a.jpg",
+        "selectedIconPath": "images/footbar_2_b.jpg"
+      },
+      {
+        "pagePath": "pages/shoppingCart/shoppingCart",
+        "text": "购物车",
+        "iconPath": "images/shoping1.png",
+        "selectedIconPath": "images/shopping2.png"
+      },
+      {
+        "pagePath": "pages/aboutMe/aboutMe",
+        "text": "我的",
+        "iconPath": "images/footbar_3_a.jpg",
+        "selectedIconPath": "images/footbar_3_b.jpg"
+      }
+    ]
+  }
+}

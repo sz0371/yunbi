@@ -1,0 +1,36 @@
+<!--pages/cloudPool/cloudPool.wxml-->
+<view class="cloudPool-top">
+    <image src="/images/companyBg1.png"></image>
+</view>
+<!-- 认购 -->
+<view class="cloudPool-card">
+      <text class="cloudPool-card-title">认购说明：</text>
+      <view class="cloudPool-card-box">
+          <image class="cloudPool-card-boxfl" src="/images/poolFont.png"></image>
+          <text class="cloudPool-card-boxfr">一个小水池1万元，等同500箱/桶披云水。 消費者认购后存入手机账户，即可获得云币科技赠送的3200元（即160箱/桶）披云水。</text>
+      </view>
+</view>
+<!-- 数量 -->
+<view class="cloudPool-nber-box">
+    <view class="cloudPool-nber-boxfl">购买数量</view>
+    <view class="cloudPool-nber-boxfr">
+        <image class="cloudPoolMin" src="/images/subtract.png" bindtap="bindMinus"></image>
+        <!-- <text class="cloudPoolNber">{{poolNum}}</text> -->
+        <input class="cloudPoolNber" value="{{poolNum}}" name="poolNumber" bindinput="getPoolNumber"/>
+        <image class="cloudPoolMax" src="/images/plus.png" bindtap="bindPlus"></image>
+    </view>
+</view>
+<!-- 认知 -->
+<view class="cloudPool-cognition">
+    <text class="cloudPool-cognition-title">小水池认购须知</text>
+    <text class="cloudPool-cognition-top">披云小水池是云币科技向消费者推出的特色消费产品。</text>
+    <text class="cloudPool-cognition-top">一个小水池1万元，即500箱（1*12）披云水。消费者认购后，另外每年可获得云币科技赠送的价值32%披云水。小水池认购时间一年起，最长可五年。</text>
+    <text class="cloudPool-cognition-top">小水池认购到期后，消费者可以选择续签或退订，云币科技承诺7个工作日办好相关手续。
+    </text>
+    <text class="cloudPool-cognition-top">消费者获赠的披云水以“朵云”方式存入消费者手机账户，可用于“云朵商城”消费。
+    </text>
+    <text class="cloudPool-cognition-top"><text  style="color: #F78449;">特別提醒：</text>一朵云等于1箱（1*12）披云水，或者等于一桶4l的桶装水。
+    </text>
+</view>
+<text class="cloudPool-cognition-hg">本产品由中国人民财产保险股份有限公司承保产品责任保险</text>
+<view bindtap="poolOk" class="cloudPool-confirm">提交</view>

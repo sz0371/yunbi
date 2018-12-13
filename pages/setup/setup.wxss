@@ -1,0 +1,32 @@
+/* pages/setup/setup.wxss */
+.setUp-banner{
+  width: 100%;
+  height: 484.8rpx;
+  display: block;
+  object-fit: cover;
+}
+
+.setUp-botm{
+  text-align: center;
+  margin-top: 112.2rpx;
+}
+.setUp-next{
+  width: 100rpx;
+  height: 100rpx;
+}
+.setUp-slogan{
+  width: 390rpx;
+  height: 364rpx;
+  margin: 039rpx auto;
+}
+.setUp-slogan image{
+  width: 250rpx;
+  height: 250rpx;
+} 
+.setUp-slogan text{
+  text-align: center;
+  margin-top: 30rpx;
+  display: block;
+  color: #333333;
+  font-size: 38rpx;
+}

@@ -1,0 +1,131 @@
+/**index.wxss**/
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 200px;
+}
+.slide-image{
+  width: 100%;
+  object-fit: cover;
+}
+/* 选项卡start */
+.cloudShopping-tab{
+  height: 108rpx;
+  width: 100%; 
+  box-sizing: border-box;
+  overflow: hidden;
+  line-height: 108rpx;
+  background: #FFFFFF; 
+  font-size: 30rpx; 
+  white-space: nowrap;
+}
+.cloudShopping-tab-list{
+  display: inline-block;
+  width: 25%;
+  text-align: center;
+  font-size:30rpx;
+  font-family:PingFangSC-Semibold;
+  color:rgba(169,169,169,1);
+}
+.cloudShopping-tab-list.active{
+  color: #333333;
+  font-size: 34rpx;
+  position: relative;
+}
+.cloudShopping-tab-list.active:after{
+   content: "";
+   display: block;
+   height: 8rpx;
+   width: 55rpx;
+  background:linear-gradient(117.8deg,rgba(126,203,236,1),rgba(80,119,203,1));
+   position: absolute; 
+   bottom: 0;
+   left: 50%;
+   margin-left: -27.5rpx;
+   border-radius: 100rpx;
+}
+/* 选项卡end */
+/* 选项卡列表start */
+.cloudShopping-box{
+    margin-top: 0rpx;
+}
+.cloudShopping-height{
+  height: 100%;
+}
+.cloudShopping-list{
+  height: 220rpx;
+  margin-left: 54rpx;
+  margin-right: 47rpx;
+  margin-top: 54rpx;
+}
+.cloudShopping-list-fl{
+  width: 220rpx;
+  height: 220rpx;
+  float: left;
+  border: 1px solid #f1f1f1;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.cloudShopping-list-fl image{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.cloudShopping-list-fr{
+  float: left;
+  width: 398rpx;
+  height: 220rpx;
+  margin-left: 26rpx; 
+  display: block;
+  position: relative;
+}
+.cloudShopping-list-fr-title{
+  font-size: 34rpx;
+  margin-top: 0rpx;
+  display: block;
+  color: ##666666;
+}
+.cloudShopping-list-fr-lable{
+  display: block;
+  font-size: 24rpx;
+  color: #A4A4A4;
+  margin-top: 20rpx;
+}
+.cloudShopping-list-fr-cloud{
+  font-size: 28rpx;
+  color: #4B71CA;
+  margin-top: 15rpx;
+  position: absolute;
+  bottom: 10rpx;
+}
+.cloudShopping-list-fr-cloud image{
+  width: 42rpx;
+  height: 31rpx;
+  display: block;
+  float: left;
+  margin-right: 10rpx;
+}
+.cloudShopping-list-fr-car{
+  width: 60rpx;
+  height: 60rpx;
+  position: absolute;
+  right: 0;
+  bottom: 10rpx;
+  display: block;
+}
+/* 选项卡列表end */

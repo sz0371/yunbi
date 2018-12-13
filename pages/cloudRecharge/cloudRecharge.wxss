@@ -1,0 +1,194 @@
+/* pages/cloudCoin/cloudCoin.wxss */
+swiper{
+  width: 750rpx;
+  height: 341rpx;
+}
+.slide-image{
+  width: 750rpx;
+
+}
+.cloudRecharger-body{
+  margin-top: 31rpx;
+  padding-bottom: 100rpx;
+}
+.cloudRecharger-header{
+  font-size:32rpx;
+  font-family:PingFangSC-Semibold;
+  color:rgba(90,139,210,1);
+  margin-left: 61rpx;
+  display: block;
+  margin-bottom: 35rpx;
+}
+.cloudRecharger-bodyNum{
+  width: 652rpx;
+  height: 304rpx;
+   overflow: hidden; 
+  margin-left: 51rpx;
+}
+.cloudRecharger-bodyNums{
+  width: 682rpx;
+  height: 280rpx;
+}
+ .cloudRecharger-bodyNums-box{
+  width: 198rpx;
+  height: 126rpx;
+  border: 1px solid #5988D1;
+  border-radius: 10rpx;
+  text-align: center;
+  float: left;
+  margin-right: 24rpx;
+  margin-bottom: 24rpx;
+} 
+ 
+.cloudRechargerNumber,.cloudRechargerGive{
+  display: block;
+}
+.cloudRechargerNumber{
+  font-size: 48rpx;
+  color: #4564C3;
+  margin-top: 15rpx;
+}
+.cloudRechargerGive{
+  font-size: 24rpx;
+  color: #A4A4A4;
+} 
+/* 添加颜色 */
+.cloudRechargerAddColor{
+  background:linear-gradient(159.6deg,rgba(115,185,228,1),rgba(79,118,202,1));
+  
+}
+.cloudRechargerAddColor .cloudRechargerNumber,.cloudRechargerAddColor .cloudRechargerGive{
+  color: #FFF;
+}
+/* 其它金额 */
+.cloudRecharger-othder{
+  width: 639rpx;
+  height: 45rpx;
+  margin-left: 61rpx;
+  margin-top: 10rpx;
+}
+.cloudRecharger-othderfl{
+  float: left;
+  font-size: 32rpx;
+  color: #5A8BD2;
+  width: 400rpx;
+}
+.cloudRecharger-othderfl label{
+  float: left;
+}
+.cloudRecharger-othderfl input{
+  float: left;
+  width: 200rpx;
+  font-size: 28rpx;
+  margin-top: -2rpx;
+}
+.cloudRecharger-othderfr{
+  float: right;
+  font-size: 28rpx;
+  color: #5A8BD2;
+}
+/* 活动 */
+.cloudRecharger-activity{
+  height: 160rpx;
+  margin-top: 29rpx;
+ 
+}
+.cloudRecharger-activityfl{
+  width: 20rpx;
+  height: 160rpx;
+  background:linear-gradient(-153.4deg,rgba(255,158,86,1),rgba(255,126,74,1));
+  float: left;
+}
+.cloudRecharger-activityfr{
+  float: left;
+  width: 719rpx;
+  height: 160rpx;
+  margin-left: 11rpx;
+  background-color: rgba(244,244,244,0.48);
+}
+.cloudRecharger-activityfrl{
+  float: left;
+  font-size: 36rpx;
+  color: #F77326;
+  width: 205rpx;
+  height: 160rpx;
+  margin-top: 31rpx;
+  margin-left: 23rpx;
+
+}
+.cloudRecharger-activityfrl image{
+  width: 47rpx;
+  height: 47rpx;
+  float: left;
+  margin-right: 11rpx;
+}
+.cloudRecharger-activityfrr{
+  float: left;
+  margin-top: 38rpx;
+  font-size: 26rpx;
+  color: #4c4c4c;
+  width: 312rpx;
+  margin-left: 20rpx; 
+}
+.cloudRecharger-rHeader{
+  font-size: 30rpx;
+  color: 333333;
+  font-family:PingFangSC-Semibold;
+  margin-left: 61rpx;
+  margin-top: 25rpx;
+  margin-bottom: 49rpx;
+}
+/* 权益 */
+.cloudRecharger-rbox{
+  height: 100rpx;
+  width: 657rpx;
+  margin-left: 56rpx;
+  margin-bottom: 44rpx;
+}
+.cloudRecharger-rboxfl{
+  float: left;
+  text-align: center;
+  width: 96rpx;
+  font-size: 24rpx;
+  color: #5A8BD2;
+
+}
+.cloudRecharger-rboxfr{
+  float: left;
+  margin-left: 36rpx;
+  color: #4C4C4C;
+  font-size: 24rpx;
+  width: 525rpx;
+}
+.cloudRecharger-rIcon1,.cloudRecharger-rIcon2,.cloudRecharger-rIcon3{
+  display: block;
+  margin: 0 auto;
+  margin-bottom:12rpx;  
+  width: 60rpx;
+  height: 60rpx; 
+}
+/* 购买按钮 */
+.cloudRechargerbtm{
+  position: fixed;
+  bottom: 0;
+  width: 750rpx;
+  height: 120rpx;
+  border-top: 1px solid rgba(244,244,244,0.48);
+  background-color: #FFFFFF;
+  
+}
+.cloudRecharger-buy{
+  width: 600rpx;
+  height: 88rpx;
+  background:linear-gradient(113.7deg,rgba(129,210,239,1),rgba(66,94,192,1));
+  box-shadow:0px 4rpx 2rpx rgba(93,165,245,0.45);
+  border-radius:100rpx;
+  text-align: center;
+  line-height: 88rpx;
+  font-size: 32rpx;
+  color: #FFFFFF;
+  margin-left: auto;
+  margin-right: auto;
+   margin-top: 18rpx; 
+  margin-bottom: 100rpx;
+}

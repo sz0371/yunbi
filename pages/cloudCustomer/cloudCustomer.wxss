@@ -1,0 +1,96 @@
+/* pages/cloudCustomer/cloudCustomer.wxss */
+.cloudCustomer-not{
+  text-align: center; 
+  /* display: none; */
+}
+.cloudCustomer-not image{
+  width: 285rpx;
+  height: 255rpx;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 306rpx;
+  display: block;
+}
+.cloudCustomer-notText{
+  display: block;
+  text-align: center;
+  font-size: 30rpx;
+}
+.cloudCustomerBtn{
+  position: fixed;
+  left: 0;
+  bottom: 155rpx;
+  width: 185rpx;
+  height: 88rpx;
+  background:linear-gradient(113.7deg,rgba(129,210,239,1),rgba(66,94,192,1));
+box-shadow:0px 4px 2px rgba(93,165,245,0.45);
+border-top-right-radius: 50px;
+border-bottom-right-radius: 50px;
+line-height: 88rpx;
+font-size: 30rpx;
+color: #FFFFFF;
+}
+.cloudCustomerBtn image{
+  width: 29rpx;
+  height: 33rpx;
+  display: block;
+  float: left;
+  margin-top: 26rpx;
+  margin-left: 36rpx;
+  margin-right: 19rpx;
+}
+/* 列表 */
+.cloudCustomer-box{
+  width: 750rpx;
+}
+.cloudCustomer-bTitle{
+  display: block;
+  height: 60rpx;
+  color: #5077CB;
+  font-size: 36rpx;
+  padding-left: 89rpx;
+  background:rgba(203,205,206,0.16);
+  line-height: 60rpx;
+  }
+.cloudCustomer-blist{
+  margin-top: 43rpx;
+  height: 112rpx;
+  margin-left: 45rpx;
+  margin-bottom: 40rpx;
+}
+.cloudCustomer-blistfl{
+  width: 112rpx;
+  height: 112rpx;
+  border-radius: 50%;
+  border: 8rpx solid rgba(212,226,255,1);
+  float: left;
+}
+.cloudCustomer-blisfr{
+  float: left;
+  width: 395rpx;
+  height: 86rpx;
+  margin-top: 15rpx;
+  margin-left: 35rpx;
+}
+.cloudCustomer-blisfr text{
+  display: block;
+  
+}
+.cloudCustomer-blisfr text:first-child{
+  color: #999999;
+  font-size: 30rpx;
+  font-family:PingFangSC-Medium;
+}
+.cloudCustomer-blisfr text:last-child{
+  font-size:26rpx;
+  font-family:PingFangSC-Regular;
+  color:rgba(172,172,172,1);
+  margin-top: 7rpx;
+}
+.cloudCustomer-blisleft{
+  float: right;
+  width: 13rpx;
+  height: 22rpx;
+  margin-right: 51rpx;
+  margin-top: 18rpx;
+}

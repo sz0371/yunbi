@@ -1,0 +1,176 @@
+/* pages/shoppingCart/shoppingCart.wxss */
+.shoppingCart-box{
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  margin-bottom: 100rpx;
+}
+.shoppingCart-checkbox{
+  background:rgba(255,255,255,1);
+  box-shadow: 0px 6px 12px 6px rgba(75,111,199,0.14);
+  border-radius: 30rpx ; 
+  display: block;
+  height: 220rpx;
+  position: relative;
+  margin-top: 20rpx;
+}
+.shoppingCart-checkboxs{
+  position: absolute;
+  top: 50%;
+  left: 10rpx;
+  margin-top: -20rpx; 
+}
+.shoppingCart-list-fl{
+  width: 186rpx;
+  height: 186rpx;
+  border-radius: 8rpx;
+  overflow: hidden;
+  margin-top: 18rpx;
+  position: absolute;
+  left: 70rpx;
+  border: 1px solid #EAEAEA;
+}
+.shoppingCart-list-fl image{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  
+}
+.shoppingCart-list-fr{
+  position: absolute;
+  left: 280rpx;
+  width: 420rpx;
+  top: 18rpx;
+  height: 160rpx;
+}
+.shoppingCart-list-fr-title{
+  font-size: 30rpx;
+  margin-top: 0rpx;
+  display: block;
+  color: #666666;
+}
+.shoppingCart-list-fr-lable{
+  font-size: 24rpx;
+   display: table; 
+  margin-top: 20rpx;
+  color:rgba(164,164,164,1);
+   line-height:22px; 
+  border: 1px solid #979797;
+  border-radius: 100px ; 
+  /* padding: 5rpx; */
+  padding-left: 15rpx;
+  padding-right: 15rpx;
+  margin-bottom: 10rpx;
+}
+.shoppingCart-list-fr-cloud{
+  position: absolute;
+  right: 20rpx;
+  bottom: 0px;
+  font-size: 28rpx;
+  color: #4B71CA;
+}
+.shoppingCart-list-fr-close{
+  width: 27rpx;
+  height: 27rpx;
+  background-color: #aaa;
+  position: absolute;
+  right: 0rpx;
+  top: 0rpx;
+}
+.shoppingCart-footer{
+  height: 80rpx;
+  position: fixed;
+  bottom: 0; 
+  width: 100%;
+}
+.shoppingCart-footer-fl{
+  float: left;
+  width:550rpx;
+  height:80rpx; 
+  background:rgba(122,196,233,0.12);
+
+}
+.shoppingCart-footer-fr{
+  display: block;
+  float: right;
+  width:200rpx;
+  height:80rpx; 
+  background:linear-gradient(129.6deg,rgba(129,210,239,1),rgba(66,94,192,1));
+  border: none;
+  text-align: center;
+  line-height: 80rpx;
+  font-size: 30rpx;
+  color: #FFFFFF;
+}
+.shoppingCart-footer-checkboxfl{
+  font-size:30rpx;
+  font-family:PingFangSC-Regular;
+  color:rgba(142,187,219,1);
+  line-height:80rpx; 
+  float: left;
+  display: block;
+  margin-left: 58rpx;
+}
+.shoppingCart-footer-checkboxfr{
+  float: right;
+  font-size:30rpx;
+  font-family:PingFangSC-Regular;
+  color:rgba(87,132,208,1);
+  line-height:80rpx;
+  margin-right: 30rpx;
+}
+.goodsNone{
+  width: 248rpx;
+  height:378rpx;
+  margin: auto;
+  margin-top: 300rpx;
+}
+.pic{
+  width:248rpx;
+  height:238rpx;
+}
+.info{
+  width:120rpx;
+  height:42rpx;
+  font-size:30rpx;
+  text-align: center;
+  margin: auto;
+  font-family:PingFangSC-Semibold;
+  color:rgba(100,157,218,1);
+  margin-top: 35rpx;
+  margin-bottom: 20rpx;
+}
+.goShopping{
+  width:192rpx;
+  height:33rpx;
+  font-size:24rpx;
+  font-family:PingFangSC-Regular;
+  color:rgba(195,195,195,1);
+  margin: auto;
+  
+}
+.delCount{
+  display: inline-block;
+  width:42rpx;
+  height:40rpx;
+  background:rgba(240,240,240,0.52);
+  position: relative;
+  top: 10rpx;
+  margin-right: 22rpx;
+}
+.addCount{
+   display: inline-block;
+  width:42rpx;
+  height:40rpx;
+  background:rgba(240,240,240,0.52);
+  position: relative;
+  top: 10rpx;
+  margin-left: 22rpx;
+}
+.goodsNum{
+  color:#666666;
+}
+.checkbox{
+  font-size: 24rpx;
+  position: absolute;
+  top: 40%;
+}

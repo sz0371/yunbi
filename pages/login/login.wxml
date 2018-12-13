@@ -1,0 +1,21 @@
+<!--pages/login/login.wxml-->
+<view class="logiBox">
+      <image class="logiBoxLogin" src="/images/cloudlogin.png"></image>
+      <text class="logiBoxText">披云</text>
+
+      <form bindsubmit="formSubmitLogin" bindreset="formResetLogin">
+          <view class="logiBoxs">
+              <label>账号</label>
+              <input name="cloudPhoneNumber" placeholder-class="psection" placeholder="请输入新的手机号" />
+          </view>
+          <view class="logiBoxs">
+              <label>密码</label>
+              <input name="cloudPassword" password="true" placeholder-class="psection" placeholder="请输入密码" focus="true" />
+          </view>
+          <view class="logiBtn"><button type="primary" form-type="submit">登录</button></view>
+      </form>
+      <view class="logOther">
+          <navigator class="logOtherfl" url="../register/register">账号注册</navigator>
+          <navigator class="logOtherfr" url="../password/password">密码找回</navigator>
+      </view>
+</view>

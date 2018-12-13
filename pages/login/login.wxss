@@ -1,0 +1,81 @@
+/* pages/login/login.wxss */
+.logiBox{
+  margin-left: 75rpx;
+  margin-right: 75rpx;
+  padding-top: 98rpx;
+  
+}
+.logiBoxLogin{
+  width: 160rpx;
+  height: 160rpx;
+  margin: 0 auto;
+  display: block;
+}
+.logiBoxText{
+  display: block;
+  font-size: 50rpx;
+  letter-spacing: 10rpx;
+  margin-top: 20rpx;
+  text-align: center;
+  margin-bottom: 73rpx;
+}
+.psection{
+  color:rgba(71,99,195,0.43);
+  font-size: 24rpx;
+  letter-spacing: 2rpx; 
+}
+
+.logiBoxs{
+  height: 88rpx;
+  width: 600rpx;
+  border-radius: 100rpx;
+  border:1px solid rgba(68,97,194,1);
+  margin-bottom: 32rpx;
+}
+.logiBoxs label{
+  display: block;
+  font-size: 30rpx;
+  color: #4461C2;
+  float: left;
+  line-height: 88rpx;
+  padding-left: 28rpx;
+  padding-right: 16rpx;
+
+}
+.logiBoxs input{
+  height: 88rpx;
+}
+.logiBtn{
+  width: 600rpx;
+  height: 88rpx;
+  line-height: 88rpx;
+  text-align: center;
+  color: #FFFFFF;
+  background:linear-gradient(113.7deg,rgba(129,210,239,1),rgba(66,94,192,1));
+box-shadow:0px 4px 2px rgba(93,165,245,0.45);
+border-radius:100rpx;
+font-size: 32rpx;
+margin-top: 21rpx;
+overflow: hidden;
+
+}
+.logiBtn button{
+  background: no-repeat;
+  font-size: 32rpx;
+  color: #FFFFFF;
+  line-height: 88rpx
+}
+.logOther{
+  height: 33rpx;
+  margin-left: 50rpx;
+  margin-right: 50rpx;
+  margin-top: 36rpx;
+  font-size: 24rpx;
+  color: #4461C2;
+}
+.logOtherfl{
+  float: left;
+}
+.logOtherfr{
+  float: right;
+}

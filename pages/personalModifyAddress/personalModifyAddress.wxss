@@ -1,0 +1,88 @@
+/* pages/personalModifyAddress/personalModifyAddress.wxss */
+.pModifyAddressBox:first-child{
+  padding-top: 40rpx;
+}
+.pModifyAddressBox{
+  height: 42rpx;
+  width: 600rpx;
+  margin-left: 70rpx;
+  margin-bottom: 68rpx;
+}
+.pModifyAddressBox label{
+  float: left;
+  font-size: 30rpx;
+  color: #666666;
+  display: block;
+  width: 125rpx;
+}
+.pModifyAddressBox input{
+  font-size: 30rpx;
+  height: 42rpx;
+  margin-top: -4rpx;
+  line-height: 42rpx;
+}
+.pModifyAddress-sex{
+  font-size: 24rpx;
+  float: left;
+}
+.pModifyAddress-sexs{
+  width: 88rpx;
+  height: 42rpx;
+  display: block;
+  float: left;
+  text-align: center;
+  line-height: 42rpx;
+  border: 1px solid #457FCA;
+  border-radius: 100rpx;
+  color: #457FCA;
+  margin-right: 20rpx;
+}
+/* 添加颜色 */
+.pModifyAddColor{
+  background:linear-gradient(113.7deg,rgba(129,210,239,1),rgba(66,94,192,1));
+  color: #FFF;
+  border: none;
+}
+.pModifyAddressBoxtext{
+  float: right;
+  font-size: 30rpx;
+  color: #B8B8B8;
+  width: 400rpx;
+  height: 42rpx;
+   overflow: hidden; 
+}
+.pModifyAddress-tare{
+  margin-left: 70rpx;
+  border: 1px solid rgba(68,97,194,1);
+  height: 300rpx;
+  width: 600rpx;
+  margin-bottom: 138rpx;
+  border-radius: 10rpx;
+  padding: 10rpx;
+  font-size: 28rpx;
+}
+.pModifyAddressBtn{
+  width:600rpx;
+  height:88rpx;
+  background:linear-gradient(113.7deg,rgba(129,210,239,1),rgba(66,94,192,1));
+  box-shadow:0px 4px 2px rgba(93,165,245,0.45);
+  border-radius:100rpx;
+  text-align: center;
+  line-height: 88rpx;
+  color: #FFF;
+  font-size: 32rpx;
+  margin: 0 auto;
+}
+.picker{
+  text-align: right;
+  float: right;
+  width: 340rpx;
+  overflow: hidden;
+}
+.pModifyAddressBoxtext image{
+  width: 13rpx;
+  height: 22rpx;
+  float: right; 
+  margin-left: 17rpx;
+  margin-top: 8rpx;
+}

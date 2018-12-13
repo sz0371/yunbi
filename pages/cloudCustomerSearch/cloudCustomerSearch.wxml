@@ -1,0 +1,20 @@
+<!--pages/cloudCustomerSearch/cloudCustomerSearch.wxml-->
+<view class="searchBox">
+    <view class="searchBoxs">
+        <image src="/images/search_ico.png"></image>
+        <input type="text" placeholder="请输入手机号码"  bindfocus="wxSerchFocus" bindinput="wxSearchInput" bindblur="wxSearchBlur" />
+    </view>
+</view>
+<view class="searchList" wx:if="{{serchListData}}">
+    <view  class="searchList-box">
+        <view class="cloudCustomer-blist" id="{{serchListData.id}}" bindtap="customerInfo">
+            <image class="cloudCustomer-blistfl" src="{{serchListData.headImg}}" id="{{serchListData.id}}"></image>
+              <view class="cloudCustomer-blisfr">
+                  <text id="{{serchListData.id}}">{{serchListData.name}}</text>
+                  <text id="{{serchListData.id}}">{{serchListData.phone}}</text>
+              </view>
+              <image src="/images/lanseright.png" id="{{serchListData.id}}" class="cloudCustomer-blisleft"></image>
+        </view>
+    </view>
+   
+</view>

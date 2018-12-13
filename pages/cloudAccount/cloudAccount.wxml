@@ -1,0 +1,46 @@
+<!--pages/cloudRecharge/cloudRecharge.wxml-->
+<wxs src='../../utils/filters.wxs' module='filters'/>
+<view class="cloudRecharge-top">
+    <view class="cloudRecharge-header">
+        <!-- <view class="cloudRecharge-headerfl">
+             <text class="cloudRecharge-headTextOne">披云小水池</text>
+            <text class="cloudRecharge-headTextTwo">0</text> 
+        </view> -->
+        <view class="cloudRecharge-headerfl">
+              <text class="cloudRecharge-headTextOne">披云小水池</text>
+              <text class="cloudRecharge-headTextTwo" wx:if="{{cloudAcData.poolNoPassed}}">{{cloudAcData.poolNoPassed}}</text> 
+              <text class="cloudRecharge-headTextTwo" wx:else>0</text>
+        </view>
+        <image class="cloudRecharge-headerfr" src="/images/myCloudsPool.png"></image>
+    </view>
+    <view class="cloudRecharge-water">
+        <image src="/images/wave.png"></image>
+    </view>
+    <view class="cloudRecharge-car">
+        <view class="cloudRecharge-carfl">
+            <image class="cloudRecharge-carflICON" src="/images/yun.png"></image>
+            <text class="cloudRecharge-carflText">我的云朵</text>
+        </view>
+        <view class="cloudRecharge-carfr" wx-if="{{cloudAcData.skyNum}}">{{cloudAcData.skyNum}}</view>
+        <view class="cloudRecharge-carfr" wx-else>0</view>
+    </view>
+</view>
+<view class="cloudRecharge-body">
+    <text class="cloudRecharge-bodyh">收支明细</text>
+    <view class="cloudRecharge-bodys" wx:if="{{detailedList.length}}">
+        <view class="cloudRecharge-list" wx:for="{{detailedList}}" wx:key="*this">
+              <view class="cloudRecharge-listfl">
+                  <text class="cloudRecharge-listflText">{{item.intro}}</text>
+                  <text class="cloudRecharge-listflTime">{{item.createTime}}</text>
+              </view>
+              <view class="cloudRecharge-listfr cloudAddcolor" style="color:{{filters.status(item.typeCode).cloudCompanyColor}}">{{item.typeCode}}{{item.typeValue}}{{filters.status(item.type).cloudCompany}}</view>
+        </view>
+    </view>
+    <view class="cloudRecharge-bodysNot" wx:else>
+    暂无明细
+    </view>
+</view>
+<view class="cloudRecharge-footer">
+   <view class="cloudRecharge-footerfl" bindtap="buyCloud">购买云朵</view>
+   <view class="cloudRecharge-footerfr" bindtap="transfar"><image src="/images/share.png"></image>转送</view>
+</view>

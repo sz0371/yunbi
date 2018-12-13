@@ -1,0 +1,91 @@
+<!--pages/orderDetails/orderDetails.wxml-->
+<wxs src='../../utils/filters.wxs' module='filters'/>
+<!-- 头部信息 -->
+<view class="orderDetails-header">
+    <view class="orderDetails-header-title">
+        <image class="orderDetails-header-titleICON" src="/images/baisetime.png"></image>{{filters.status(orderInfoData.state).orderState}}
+    </view>
+    <!-- 收货信息 -->
+    <view class="orderDetails-info">
+        <text class="orderDetails-info-title">收货信息</text>
+        <view style="height:35rpx;"></view>
+        <!-- 收货人 -->
+        <view class="orderDetails-info-list">
+          <view class="orderDetails-info-lfl">
+              <image class="orderDetails-info-listICON" src="/images/gerenzhongxin.png"></image>
+              <label>收货人</label>
+          </view>
+          <view class="orderDetails-info-list-person">
+              {{orderInfoData.receiverName}} <text>{{orderInfoData.receiverPhone}}</text>
+          </view>
+        </view>
+        <!-- 收货地址 -->
+        <view class="orderDetails-info-list">
+          <view class="orderDetails-info-lfl">
+              <image class="orderDetails-info-listICON" src="/images/dingwei.png"></image>
+              <label>收货地址</label>
+          </view>
+          <view class="orderDetails-info-list-person">{{orderInfoData.receiverAddress}}
+          </view>
+        </view>
+        <!-- 配送时间 -->
+        <view class="orderDetails-info-list">
+          <view class="orderDetails-info-lfl">
+              <image class="orderDetails-info-listICON" src="/images/shijian.png"></image>
+              <label>配送时间</label>
+          </view>
+          <view class="orderDetails-info-list-person">{{orderInfoData.expectedTime}}
+          </view>
+        </view>
+    </view>
+</view>
+<!-- 内容 -->
+<view class="orderDetails-body">
+    <view class="orderDetails-body-box">
+        <!-- 产品信息 -->
+        <view class="orderDetails-body-info" wx:for="{{orderDetailsList}}" wx:key="*this">
+            <view class="orderDetails-body-infofl">
+                <image src="{{item.productImagePath}}"></image>
+            </view>
+            <view class="orderDetails-body-infofr">
+                <text class="orderDetails-body-infofr-title">{{item.productName}}</text>
+                <text class="orderDetails-body-infofr-nber">{{item.productStandard}}</text>
+                <text class="orderDetails-body-infofr-totle"><text>X</text>{{item.buyNum}}</text>
+            </view>
+        </view>
+        <!-- 支付金额 -->
+        <view class="orderDetails-body-pay">
+            <view class="orderDetails-body-payfl">{{filters.status(orderInfoData.state).orderStatus}}</view>
+            <view class="orderDetails-body-payfr">
+                <image class="orderDetails-body-payfr-icon" src="/images/keji.png"></image>{{orderInfoData.payPrice}}朵云
+            </view>
+        </view>
+
+         <view class="orderDetails-body-order">
+            <view class="orderDetails-body-payfls">
+                <view class="orderDetails-body-payfll">下单时间</view>
+                <view class="orderDetails-body-payflr">{{orderInfoData.createTime}}</view>
+            </view>
+            <view class="orderDetails-body-payfls">
+                <view class="orderDetails-body-payfll">订单编号</view>
+                <view class="orderDetails-body-payflr">{{orderInfoData.orderNo}}</view>
+            </view>
+            <view class="orderDetails-body-payfls">
+                <view class="orderDetails-body-payfll">备注信息</view>
+                <view class="orderDetails-body-payflr">每单起配数量为8朵云</view>
+            </view>
+        </view> 
+    </view>
+</view>
+<!-- 操作 -->
+<!-- 待付款 -->
+<view class="orderDetails-footer">
+    <view class="orderDetails-not" wx:if="{{orderInfoData.state==-1}}">
+        <view class="orderDetails-footer-fl" bindtap="closeOrder" data-orderid = "{{orderInfoData.tjOrderDetailModelList[0].orderId}}">取消</view>
+        <view class="orderDetails-footer-fr" bindtap="payOrder" data-orderid = "{{orderInfoData.tjOrderDetailModelList[0].orderId}}">立即付款</view>
+    </view>
+    <!-- <view class="orderDetails-Distributiont" wx:else="{{orderInfoData.state}}">
+        确定收货
+    </view> -->
+</view>
+

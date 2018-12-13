@@ -1,0 +1,43 @@
+<!--pages/shoppingCart/shoppingCart.wxml-->
+<view class="shoppingCart-box">
+    <view class="shoppingCart-checkbox" wx:for="{{list}}" wx:key="*this" >
+        <!-- wx:if 是否选择显示不同图标 -->
+           <!-- <icon type="success" color="red" bindtap="selectList" wx:if="{{selID==item.id}}" class='mycircle' data-index="{{item.id}}" />    -->
+           <!-- <icon type="circle" bindtap="selectList" class='mycircle' data-index="{{item.id}}"/>   -->
+        <checkbox-group bindchange="checkboxChange" class="checkbox" data-id="{{item.id}}">
+              <label>
+                <checkbox value="{{item.id}}" checked="{{item.isChange=='Y'||ckall==1}}"/>
+              </label>
+        </checkbox-group>
+        <view class='shoppingCart-list-fl'><image src="{{item.productImagePath}}"></image></view>
+        <view class='shoppingCart-list-fr'>
+            <text class='shoppingCart-list-fr-title'>{{item.productName}}</text>
+            <text class='shoppingCart-list-fr-lable'>{{item.standard}} </text>
+            <!-- 增加减少数量按钮 -->
+            <view>
+                 <!-- <text bindtap="minusCount" data-index="{{index}}" class="delCount">-</text>  -->
+                 <image src='/images/subtract.jpg' class="delCount" bindtap="minusCount" data-id="{{item.id}}" data-num="{{item.productNum}}"></image>
+                 <text>{{item.productNum}}</text>
+                 <image src='/images/plus.jpg' bindtap="addCount" data-id="{{item.id}}" data-productId="{{item.productId}}" class="addCount" data-num="{{item.productNum}}"></image>
+                 <!-- <text bindtap="addCount" data-index="{{index}}" class="addCount">+</text>  -->
+            </view>
+
+            <icon class="shoppingCart-list-fr-cloud">{{item.productPrice}}朵云</icon>
+            <image src='/images/close.jpg' data-productId="{{item.productId}}" class='shoppingCart-list-fr-close' bindtap='del' data-id="{{item.id}}" ></image>
+            <!-- <icon class='shoppingCart-list-fr-close'>44</icon> -->
+        </view>
+    </view>
+</view>
+<view class="shoppingCart-footer">
+    <view class="shoppingCart-footer-fl">
+        <text class="shoppingCart-footer-checkboxfl" bindtap='ckAll'> <checkbox  value="" class="shoppingCart-checkboxs"></checkbox>全选</text>
+        <text class="shoppingCart-footer-checkboxfr">合计：{{total}}个</text>
+    </view>
+    <view class="shoppingCart-footer-fr" bindtap='goPay'>结算</view>
+</view>
+
+<view class='goodsNone' wx:if="{{turn}}">
+  <image src='/images/Bitmap.png' class='pic'></image>
+  <view class='info'>暂无商品</view>
+  <view class='goShopping' bindtap='goShopping'>快去商城看看吧～</view>
+</view>
